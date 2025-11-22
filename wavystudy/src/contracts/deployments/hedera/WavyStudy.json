@@ -1,0 +1,2205 @@
+{
+  "address": "0x53333e0F332d8dFb62b38B2925E9fD6FCe7F942F",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "email",
+          "type": "string"
+        }
+      ],
+      "name": "CheckEmail",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "full_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "password",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "accesstoken",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "walletaddress",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "birth_date",
+          "type": "string"
+        }
+      ],
+      "name": "CreateAccount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "CreateCompletedInformedConsent",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "CreateCompletedSurveys",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "given_permission",
+          "type": "string"
+        }
+      ],
+      "name": "CreateOngoingStudy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "metadata",
+          "type": "string"
+        }
+      ],
+      "name": "CreateOrSaveSections",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "metadata",
+          "type": "string"
+        }
+      ],
+      "name": "CreateOrSaveStudyTitle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "section_id",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "question_id",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "answer",
+          "type": "string"
+        }
+      ],
+      "name": "CreateQuestionAnswer",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "permission",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "contributors",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "audience",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "budget",
+          "type": "uint256"
+        }
+      ],
+      "name": "CreateStudy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reward",
+          "type": "uint256"
+        }
+      ],
+      "name": "CreateSurvey",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        }
+      ],
+      "name": "CreateSurveyCategory",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "GetOngoingStudy",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "password",
+          "type": "string"
+        }
+      ],
+      "name": "Login",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "userid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "accesstoken",
+          "type": "string"
+        }
+      ],
+      "name": "UpdateAccessToken",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "audience_info",
+          "type": "string"
+        }
+      ],
+      "name": "UpdateAudience",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "walletaddress",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "family_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "given_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "identifier",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "phone",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "gender",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "birth_date",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "about",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "patient_id",
+          "type": "string"
+        }
+      ],
+      "name": "UpdateFhir",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "reward_type",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reward_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "total_spending_limit",
+          "type": "uint256"
+        }
+      ],
+      "name": "UpdateReward",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "budget",
+          "type": "uint256"
+        }
+      ],
+      "name": "UpdateStudy",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "metadata",
+          "type": "string"
+        }
+      ],
+      "name": "UpdateStudyAges",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reward",
+          "type": "uint256"
+        }
+      ],
+      "name": "UpdateSurvey",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "credits",
+          "type": "uint256"
+        }
+      ],
+      "name": "UpdateUser",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "userid",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "person",
+          "type": "address"
+        }
+      ],
+      "name": "WithDrawAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_AnsweredIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_CompletedInformedConsentIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_CompletedSurveyIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_FhirIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_OngoingIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_StudyIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_SubjectIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_SurveyCategoryIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_SurveyIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "_UserIds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_categoryMap",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_completedinformedMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "completed_informed_consent_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_completedsurveyMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "completed_survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_fhirMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "family_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "given_name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "identifier",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "phone",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "gender",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "birth_date",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "about",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "patient_id",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_ongoingMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "ongoing_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "given_permission",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_questionanswerdMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "answer_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "section_id",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "question_id",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "answer",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_sectionsMap",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_studyAges",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_studyAudienceMap",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_studyMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "permission",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "contributors",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "audience",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "budget",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "reward_type",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reward_price",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "total_spending_limit",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_studyTitles",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "_surveyMap",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "survey_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "date",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "image",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "reward",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "submission",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAllCompletedSurveysIDByUser",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getAllSurveysIDByStudy",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "study_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCompletedInformedConsentId",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "user_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getUserDetails",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x1afb8dbcecf63f7ead3fb2bd8818a481c5b33334664a639c92757016e66882f2",
+  "receipt": {
+    "to": "0x53333e0F332d8dFb62b38B2925E9fD6FCe7F942F",
+    "from": "0x9ba3e876ecE6dDbCA9023fc79B41dcd3501d094D",
+    "contractAddress": "0x53333e0F332d8dFb62b38B2925E9fD6FCe7F942F",
+    "transactionIndex": 3,
+    "gasUsed": "365931",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xe4854799714b7bacbf04f19535cde38051a4f363ae740b08fb439e6cf9225cef",
+    "transactionHash": "0x1afb8dbcecf63f7ead3fb2bd8818a481c5b33334664a639c92757016e66882f2",
+    "logs": [],
+    "blockNumber": 13290708,
+    "cumulativeGasUsed": "365931",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "b535d99f718c55446c48d2112d691a42",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"CheckEmail\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"full_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"password\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"accesstoken\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"walletaddress\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"birth_date\",\"type\":\"string\"}],\"name\":\"CreateAccount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"}],\"name\":\"CreateCompletedInformedConsent\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"survey_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"}],\"name\":\"CreateCompletedSurveys\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"given_permission\",\"type\":\"string\"}],\"name\":\"CreateOngoingStudy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"survey_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"metadata\",\"type\":\"string\"}],\"name\":\"CreateOrSaveSections\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"metadata\",\"type\":\"string\"}],\"name\":\"CreateOrSaveStudyTitle\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"survey_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"section_id\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"question_id\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"}],\"name\":\"CreateQuestionAnswer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"permission\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"contributors\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"audience\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"budget\",\"type\":\"uint256\"}],\"name\":\"CreateStudy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"reward\",\"type\":\"uint256\"}],\"name\":\"CreateSurvey\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"}],\"name\":\"CreateSurveyCategory\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"}],\"name\":\"GetOngoingStudy\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"password\",\"type\":\"string\"}],\"name\":\"Login\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"userid\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"accesstoken\",\"type\":\"string\"}],\"name\":\"UpdateAccessToken\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"audience_info\",\"type\":\"string\"}],\"name\":\"UpdateAudience\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"walletaddress\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"family_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"given_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"identifier\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"phone\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"gender\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"birth_date\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"about\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"patient_id\",\"type\":\"string\"}],\"name\":\"UpdateFhir\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"reward_type\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"reward_price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"total_spending_limit\",\"type\":\"uint256\"}],\"name\":\"UpdateReward\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"budget\",\"type\":\"uint256\"}],\"name\":\"UpdateStudy\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"metadata\",\"type\":\"string\"}],\"name\":\"UpdateStudyAges\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"survey_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"reward\",\"type\":\"uint256\"}],\"name\":\"UpdateSurvey\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"credits\",\"type\":\"uint256\"}],\"name\":\"UpdateUser\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"userid\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"person\",\"type\":\"address\"}],\"name\":\"WithDrawAmount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_AnsweredIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_CompletedInformedConsentIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_CompletedSurveyIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_FhirIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_OngoingIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_StudyIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_SubjectIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_SurveyCategoryIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_SurveyIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"_UserIds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_categoryMap\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_completedinformedMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"completed_informed_consent_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_completedsurveyMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"completed_survey_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"survey_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_fhirMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"family_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"given_name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"identifier\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"phone\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"gender\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"birth_date\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"about\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"patient_id\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_ongoingMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"ongoing_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"given_permission\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_questionanswerdMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"answer_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"survey_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"section_id\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"question_id\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_sectionsMap\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_studyAges\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_studyAudienceMap\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_studyMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"title\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"permission\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"contributors\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"audience\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"budget\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"reward_type\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"reward_price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"total_spending_limit\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_studyTitles\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"_surveyMap\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"survey_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"description\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"date\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"image\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"reward\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"submission\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"}],\"name\":\"getAllCompletedSurveysIDByUser\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"}],\"name\":\"getAllSurveysIDByStudy\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"study_id\",\"type\":\"uint256\"}],\"name\":\"getCompletedInformedConsentId\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"user_id\",\"type\":\"uint256\"}],\"name\":\"getUserDetails\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"_categoryMap(uint256)\":{\"notice\":\"The map of all the Survey Category .\"},\"_completedinformedMap(uint256)\":{\"notice\":\"The map of all the Completed Informed Consent.\"},\"_completedsurveyMap(uint256)\":{\"notice\":\"The map of all the Completed Surveys.\"},\"_fhirMap(uint256)\":{\"notice\":\"The map of all the FHIR information.\"},\"_ongoingMap(uint256)\":{\"notice\":\"The map of all the OnGoing Studies.\"},\"_questionanswerdMap(uint256)\":{\"notice\":\"The map of all the Question Answerd in a Survey.\"},\"_sectionsMap(uint256)\":{\"notice\":\"The map of all the Survey Sections  .\"},\"_studyAudienceMap(uint256)\":{\"notice\":\"The map of all the Rewards information.\"},\"_studyMap(uint256)\":{\"notice\":\"The map of all the Studies information.\"},\"_surveyMap(uint256)\":{\"notice\":\"The map of all the Surveys information.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/WavyStudy.sol\":\"WavyStudy\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/WavyStudy.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity ^0.8.0;\\r\\nimport \\\"./lib/Strings.sol\\\";\\r\\n\\r\\ncontract WavyStudy {\\r\\n    /// User contains all the login information\\r\\n    struct user_struct {\\r\\n        /// The ID of the User ID.\\r\\n        uint256 user_id;\\r\\n        ///Full Name of user\\r\\n        string name;\\r\\n        ///Email of user\\r\\n        string email;\\r\\n        ///Password of user\\r\\n        string password;\\r\\n        ///Address of Wallet\\r\\n        string walletaddress;\\r\\n        /// The User Image\\r\\n        string image;\\r\\n        /// The User Credits\\r\\n        uint256 credits;\\r\\n        /// The Access Token of wearable\\r\\n        string accesstoken;\\r\\n        /// The Fhir ID of the User.\\r\\n        uint256 fhirid;\\r\\n    }\\r\\n\\r\\n    /// Survy Category Struct contains all the Category information\\r\\n    struct survey_category_struct {\\r\\n        ///Name of Category\\r\\n        string name;\\r\\n        ///Image Link of Category\\r\\n        string image;\\r\\n    }\\r\\n\\r\\n    /// Study Struct contains all the study information\\r\\n    struct study_struct {\\r\\n        /// The ID of the Study ID.\\r\\n        uint256 study_id;\\r\\n        /// The ID of the User ID.\\r\\n        uint256 user_id;\\r\\n        /// The Image of the Study\\r\\n        string image;\\r\\n        /// The Title of the Study\\r\\n        string title;\\r\\n        /// The Description of the Study\\r\\n        string description;\\r\\n        /// The Data permission of the Study\\r\\n        string permission;\\r\\n        /// The Contributors of the Study\\r\\n        uint256 contributors;\\r\\n        /// The Audience of the Study\\r\\n        uint256 audience;\\r\\n        /// The Budget of the Study\\r\\n        uint256 budget;\\r\\n        /// The Type of the Reward.\\r\\n        string reward_type;\\r\\n        /// The Price of the Reward.\\r\\n        uint256 reward_price;\\r\\n        /// The Total Spending Limit of the Study.\\r\\n        uint256 total_spending_limit;\\r\\n    }\\r\\n\\r\\n    /// Survey Struct contains all the survey information\\r\\n    struct survey_struct {\\r\\n        /// The ID of the Survey ID.\\r\\n        uint256 survey_id;\\r\\n        /// The ID of the Study ID.\\r\\n        uint256 study_id;\\r\\n        /// The ID of the User ID.\\r\\n        uint256 user_id;\\r\\n        /// The Name of the Survey\\r\\n        string name;\\r\\n        /// The Description of the Survey\\r\\n        string description;\\r\\n        /// The Date of the Survey\\r\\n        string date;\\r\\n        /// The Image of the Survey\\r\\n        string image;\\r\\n        /// The Reward of the Survey\\r\\n        uint256 reward;\\r\\n        /// The Submission of the Survey\\r\\n        uint256 submission;\\r\\n    }\\r\\n\\r\\n    /// FHIR user information\\r\\n    struct fhir_struct {\\r\\n        /// User ID of the user\\r\\n        uint256 user_id;\\r\\n        /// Family Name in FHIR\\r\\n        string family_name;\\r\\n        /// Given Name in FHIR\\r\\n        string given_name;\\r\\n        /// Identifier of the user FHIR\\r\\n        string identifier;\\r\\n        /// Phone of the user FHIR\\r\\n        string phone;\\r\\n        /// Sex of the user FHIR\\r\\n        string gender;\\r\\n        /// Birth Date of the user FHIR\\r\\n        string birth_date;\\r\\n        /// About of the user FHIR\\r\\n        string about;\\r\\n        /// The Patient ID of the user FHIR\\r\\n        string patient_id;\\r\\n    }\\r\\n\\r\\n    /// OnGoing Study\\r\\n    struct ongoing_struct {\\r\\n        uint256 ongoing_id;\\r\\n        uint256 study_id;\\r\\n        uint256 user_id;\\r\\n        string date;\\r\\n        string given_permission;\\r\\n    }\\r\\n\\r\\n    /// Question Answers of Survey\\r\\n    struct survey_question_answer_struct {\\r\\n        uint256 answer_id;\\r\\n        uint256 study_id;\\r\\n        uint256 user_id;\\r\\n        uint256 survey_id;\\r\\n        string section_id;\\r\\n        string question_id;\\r\\n        string answer;\\r\\n    }\\r\\n\\r\\n    /// Completed Survey Study\\r\\n    struct completed_survey_struct {\\r\\n        uint256 completed_survey_id;\\r\\n        uint256 study_id;\\r\\n        uint256 user_id;\\r\\n        uint256 survey_id;\\r\\n        string date;\\r\\n    }\\r\\n    /// Completed Informed Consent Study\\r\\n    struct completed_informed_consent_struct {\\r\\n        uint256 completed_informed_consent_id;\\r\\n        uint256 study_id;\\r\\n        uint256 user_id;\\r\\n        string date;\\r\\n    }\\r\\n\\r\\n    uint256 public _UserIds;\\r\\n    uint256 public _FhirIds;\\r\\n    uint256 public _StudyIds;\\r\\n    uint256 public _SubjectIds;\\r\\n    uint256 public _SurveyIds;\\r\\n    uint256 public _SurveyCategoryIds;\\r\\n    uint256 public _OngoingIds;\\r\\n    uint256 public _AnsweredIds;\\r\\n    uint256 public _CompletedSurveyIds;\\r\\n    uint256 public _CompletedInformedConsentIds;\\r\\n\\r\\n    /// The map of all the Users login information.\\r\\n    mapping(uint256 => user_struct) private _userMap;\\r\\n    /// The map of all the Studies information.\\r\\n    mapping(uint256 => study_struct) public _studyMap;\\r\\n    mapping(uint256 => string) public _studyAges;\\r\\n    mapping(uint256 => string) public _studyTitles; //study id => Study title ages groups answers JSON\\r\\n    /// The map of all the Rewards information.\\r\\n    mapping(uint256 => string) public _studyAudienceMap; //study id => Audience JSON\\r\\n    /// The map of all the Surveys information.\\r\\n    mapping(uint256 => survey_struct) public _surveyMap;\\r\\n    /// The map of all the Survey Category .\\r\\n    mapping(uint256 => survey_category_struct) public _categoryMap;\\r\\n    /// The map of all the Survey Sections  .\\r\\n    mapping(uint256 => string) public _sectionsMap; //Survey id => All sections\\r\\n\\r\\n    /// The map of all the FHIR information.\\r\\n    mapping(uint256 => fhir_struct) public _fhirMap; //User id => user FHIR\\r\\n    /// The map of all the OnGoing Studies.\\r\\n    mapping(uint256 => ongoing_struct) public _ongoingMap;\\r\\n    /// The map of all the Question Answerd in a Survey.\\r\\n    mapping(uint256 => survey_question_answer_struct)\\r\\n        public _questionanswerdMap;\\r\\n    /// The map of all the Completed Surveys.\\r\\n    mapping(uint256 => completed_survey_struct) public _completedsurveyMap;\\r\\n\\r\\n    /// The map of all the Completed Informed Consent.\\r\\n    mapping(uint256 => completed_informed_consent_struct)\\r\\n        public _completedinformedMap;\\r\\n\\r\\n    //Login User\\r\\n    function CheckEmail(\\r\\n        string memory email\\r\\n    ) public view returns (string memory) {\\r\\n        ///Getting the found account\\r\\n        for (uint256 i = 0; i < _UserIds; i++) {\\r\\n            if (\\r\\n                keccak256(bytes(_userMap[i].email)) == keccak256(bytes(email))\\r\\n            ) {\\r\\n                ///Returning user id\\r\\n                return Strings.toString(i);\\r\\n            }\\r\\n        }\\r\\n\\r\\n        ///Returning False if not found user\\r\\n        return \\\"False\\\";\\r\\n    }\\r\\n\\r\\n    //CreateAccount\\r\\n    function CreateAccount(\\r\\n        string memory full_name,\\r\\n        string memory email,\\r\\n        string memory password,\\r\\n        string memory accesstoken,\\r\\n        string memory walletaddress,\\r\\n        string memory birth_date\\r\\n    ) public {\\r\\n        // Store the metadata of user in the map.\\r\\n        _userMap[_UserIds] = user_struct({\\r\\n            user_id: _UserIds,\\r\\n            name: full_name,\\r\\n            email: email,\\r\\n            password: password,\\r\\n            walletaddress: walletaddress,\\r\\n            image: \\\"https://i.postimg.cc/SsxGw5cZ/person.jpg\\\",\\r\\n            credits: 0,\\r\\n            accesstoken: accesstoken,\\r\\n            fhirid: _UserIds\\r\\n        });\\r\\n        _fhirMap[_UserIds].birth_date = birth_date;\\r\\n        _fhirMap[_UserIds].user_id = _UserIds;\\r\\n\\r\\n        _UserIds++;\\r\\n    }\\r\\n\\r\\n    //Update AccessToken\\r\\n    function UpdateAccessToken(\\r\\n        uint256 userid,\\r\\n        string memory accesstoken\\r\\n    ) public {\\r\\n        _userMap[userid].accesstoken = accesstoken;\\r\\n    }\\r\\n\\r\\n    //Login User\\r\\n    function Login(\\r\\n        string memory email,\\r\\n        string memory password\\r\\n    ) public view returns (string memory) {\\r\\n        ///Getting the found account\\r\\n        for (uint256 i = 0; i < _UserIds; i++) {\\r\\n            if (\\r\\n                keccak256(bytes(_userMap[i].email)) ==\\r\\n                keccak256(bytes(email)) &&\\r\\n                keccak256(bytes(_userMap[i].password)) ==\\r\\n                keccak256(bytes(password))\\r\\n            ) {\\r\\n                ///Returning user id\\r\\n                return Strings.toString(i);\\r\\n            }\\r\\n        }\\r\\n\\r\\n        ///Returning False if not found user\\r\\n        return \\\"False\\\";\\r\\n    }\\r\\n\\r\\n    //Create Study\\r\\n    function CreateStudy(\\r\\n        uint256 user_id,\\r\\n        string memory image,\\r\\n        string memory title,\\r\\n        string memory description,\\r\\n        string memory permission,\\r\\n        uint256 contributors,\\r\\n        uint256 audience,\\r\\n        uint256 budget\\r\\n    ) public {\\r\\n        // Store the metadata of Study in the map.\\r\\n        _studyMap[_StudyIds] = study_struct({\\r\\n            study_id: _StudyIds,\\r\\n            user_id: user_id,\\r\\n            image: image,\\r\\n            title: title,\\r\\n            description: description,\\r\\n            permission: permission,\\r\\n            contributors: contributors,\\r\\n            audience: audience,\\r\\n            budget: budget,\\r\\n            reward_type: \\\"HBAR\\\",\\r\\n            reward_price: 0,\\r\\n            total_spending_limit: budget\\r\\n        });\\r\\n        _StudyIds++;\\r\\n    }\\r\\n\\r\\n    //Create Survey\\r\\n    function CreateSurvey(\\r\\n        uint256 study_id,\\r\\n        uint256 user_id,\\r\\n        string memory name,\\r\\n        string memory description,\\r\\n        string memory date,\\r\\n        string memory image,\\r\\n        uint256 reward\\r\\n    ) public payable {\\r\\n        // Store the metadata of Survey in the map.\\r\\n        _surveyMap[_SurveyIds] = survey_struct({\\r\\n            survey_id: _SurveyIds,\\r\\n            study_id: study_id,\\r\\n            user_id: user_id,\\r\\n            name: name,\\r\\n            description: description,\\r\\n            date: date,\\r\\n            image: image,\\r\\n            reward: reward,\\r\\n            submission: 0\\r\\n        });\\r\\n        _SurveyIds++;\\r\\n    }\\r\\n\\r\\n    //Create or Save Sections\\r\\n    function CreateOrSaveSections(\\r\\n        uint256 survey_id,\\r\\n        string memory metadata\\r\\n    ) public {\\r\\n        // Store the metadata of all Sections in the map.\\r\\n        _sectionsMap[survey_id] = metadata;\\r\\n    }\\r\\n    //Update Ages Groups\\r\\n    function UpdateStudyAges(uint256 study_id, string memory metadata) public {\\r\\n        // Update ages group in study.\\r\\n        _studyAges[study_id] = metadata;\\r\\n    }\\r\\n\\r\\n    //Create or Save Study title\\r\\n    function CreateOrSaveStudyTitle(\\r\\n        uint256 study_id,\\r\\n        string memory metadata\\r\\n    ) public {\\r\\n        // Store the metadata of all Sections in the map.\\r\\n        _studyTitles[study_id]= metadata;\\r\\n    }\\r\\n    //Create Survey Category\\r\\n    function CreateSurveyCategory(\\r\\n        string memory name,\\r\\n        string memory image\\r\\n    ) public {\\r\\n        // Store the metadata of Survey Category in the map.\\r\\n        _categoryMap[_SurveyCategoryIds] = survey_category_struct({\\r\\n            name: name,\\r\\n            image: image\\r\\n        });\\r\\n        _SurveyCategoryIds++;\\r\\n    }\\r\\n\\r\\n    //Get All Survey by Study ID\\r\\n    function getAllSurveysIDByStudy(\\r\\n        uint256 study_id\\r\\n    ) public view returns (uint256[] memory) {\\r\\n        uint256 _TemporarySearch = 0;\\r\\n\\r\\n        for (uint256 i = 0; i < _SurveyIds; i++) {\\r\\n            if (_surveyMap[i].study_id == study_id) {\\r\\n                _TemporarySearch++;\\r\\n            }\\r\\n        }\\r\\n        uint256[] memory _SearchedStore = new uint256[](_TemporarySearch);\\r\\n\\r\\n        uint256 _SearchIds2 = 0;\\r\\n\\r\\n        for (uint256 i = 0; i < _SurveyIds; i++) {\\r\\n            if (_surveyMap[i].study_id == study_id) {\\r\\n                _SearchedStore[_SearchIds2] = i;\\r\\n                _SearchIds2++;\\r\\n            }\\r\\n        }\\r\\n\\r\\n        return _SearchedStore;\\r\\n    }\\r\\n\\r\\n    //Get UserDetails by userid\\r\\n    function getUserDetails(\\r\\n        uint256 user_id\\r\\n    )\\r\\n        public\\r\\n        view\\r\\n        returns (\\r\\n            string memory,\\r\\n            uint256,\\r\\n            string memory,\\r\\n            string memory,\\r\\n            string memory,\\r\\n            string memory,\\r\\n            uint256\\r\\n        )\\r\\n    {\\r\\n        return (\\r\\n            _userMap[user_id].image,\\r\\n            _userMap[user_id].credits,\\r\\n            _userMap[user_id].name,\\r\\n            _userMap[user_id].email,\\r\\n            _userMap[user_id].walletaddress,\\r\\n            _userMap[user_id].accesstoken,\\r\\n            _userMap[user_id].fhirid\\r\\n        );\\r\\n    }\\r\\n\\r\\n    //Update Study\\r\\n    function UpdateStudy(\\r\\n        uint256 study_id,\\r\\n        string memory image,\\r\\n        string memory title,\\r\\n        string memory description,\\r\\n        uint256 budget\\r\\n    ) public {\\r\\n        // Update the metadata of Study in the map.\\r\\n        _studyMap[study_id].image = image;\\r\\n        _studyMap[study_id].title = title;\\r\\n        _studyMap[study_id].description = description;\\r\\n        _studyMap[study_id].budget = budget;\\r\\n    }\\r\\n\\r\\n    //Update Survey\\r\\n    function UpdateSurvey(\\r\\n        uint256 survey_id,\\r\\n        string memory name,\\r\\n        string memory description,\\r\\n        string memory image,\\r\\n        uint256 reward\\r\\n    ) public {\\r\\n        // Update the metadata of Survey in the map.\\r\\n        _surveyMap[survey_id].name = name;\\r\\n        _surveyMap[survey_id].description = description;\\r\\n        _surveyMap[survey_id].image = image;\\r\\n        _surveyMap[survey_id].reward = reward;\\r\\n    }\\r\\n\\r\\n    //Update Reward\\r\\n    function UpdateReward(\\r\\n        uint256 study_id,\\r\\n        string memory reward_type,\\r\\n        uint256 reward_price,\\r\\n        uint256 total_spending_limit\\r\\n    ) public {\\r\\n        // Update the metadata of Study in the map.\\r\\n        _studyMap[study_id].reward_type = reward_type;\\r\\n        _studyMap[study_id].reward_price = reward_price;\\r\\n        _studyMap[study_id].total_spending_limit = total_spending_limit;\\r\\n    }\\r\\n\\r\\n    //Update Audience\\r\\n    function UpdateAudience(\\r\\n        uint256 study_id,\\r\\n        string memory audience_info\\r\\n    ) public {\\r\\n        // Update the metadata of Audience in the map.\\r\\n        _studyAudienceMap[study_id] = audience_info;\\r\\n    }\\r\\n\\r\\n    //Update User\\r\\n    function UpdateUser(\\r\\n        uint256 user_id,\\r\\n        string memory image,\\r\\n        uint256 credits\\r\\n    ) public {\\r\\n        // Update the metadata of User in the map\\r\\n        _userMap[user_id].image = image;\\r\\n        _userMap[user_id].credits = credits;\\r\\n    }\\r\\n\\r\\n    //Update FHIR\\r\\n    function UpdateFhir(\\r\\n        uint256 user_id,\\r\\n        string memory walletaddress,\\r\\n        string memory family_name,\\r\\n        string memory given_name,\\r\\n        string memory identifier,\\r\\n        string memory phone,\\r\\n        string memory gender,\\r\\n        string memory birth_date,\\r\\n        string memory about,\\r\\n        string memory patient_id\\r\\n    ) public {\\r\\n        // Update the metadata of FHIR in the map.\\r\\n        _fhirMap[user_id].user_id = user_id;\\r\\n        _fhirMap[user_id].family_name = family_name;\\r\\n        _fhirMap[user_id].given_name = given_name;\\r\\n        _fhirMap[user_id].identifier = identifier;\\r\\n        _fhirMap[user_id].phone = phone;\\r\\n        _fhirMap[user_id].gender = gender;\\r\\n        _fhirMap[user_id].birth_date = birth_date;\\r\\n        _fhirMap[user_id].about = about;\\r\\n        _fhirMap[user_id].patient_id = patient_id;\\r\\n        _userMap[user_id].walletaddress = walletaddress;\\r\\n    }\\r\\n\\r\\n    function CreateOngoingStudy(\\r\\n        uint256 study_id,\\r\\n        uint256 user_id,\\r\\n        string memory date,\\r\\n        string memory given_permission\\r\\n    ) public {\\r\\n        // Store the metadata of Ongoing Study in the map.\\r\\n        _ongoingMap[_OngoingIds] = ongoing_struct({\\r\\n            ongoing_id: _OngoingIds,\\r\\n            study_id: study_id,\\r\\n            user_id: user_id,\\r\\n            date: date,\\r\\n            given_permission: given_permission\\r\\n        });\\r\\n        _studyMap[study_id].contributors += 1;\\r\\n        _OngoingIds++;\\r\\n    }\\r\\n\\r\\n    function GetOngoingStudy(\\r\\n        uint256 user_id\\r\\n    ) public view returns (string memory) {\\r\\n        ///Getting the found Ongoing Study\\r\\n        for (uint256 i = 0; i < _OngoingIds; i++) {\\r\\n            if (_ongoingMap[i].user_id == user_id) {\\r\\n                ///Returning Study id\\r\\n                return Strings.toString(_ongoingMap[i].study_id);\\r\\n            }\\r\\n        }\\r\\n        ///Returning False if not found\\r\\n        return \\\"False\\\";\\r\\n    }\\r\\n\\r\\n    function CreateQuestionAnswer(\\r\\n        uint256 study_id,\\r\\n        uint256 user_id,\\r\\n        uint256 survey_id,\\r\\n        string memory section_id,\\r\\n        string memory question_id,\\r\\n        string memory answer\\r\\n    ) public {\\r\\n        // Store the metadata of Question Answered in the map.\\r\\n        _questionanswerdMap[_AnsweredIds] = survey_question_answer_struct({\\r\\n            answer_id: _AnsweredIds,\\r\\n            study_id: study_id,\\r\\n            user_id: user_id,\\r\\n            survey_id: survey_id,\\r\\n            section_id: section_id,\\r\\n            question_id: question_id,\\r\\n            answer: answer\\r\\n        });\\r\\n        _AnsweredIds++;\\r\\n    }\\r\\n\\r\\n    function CreateCompletedSurveys(\\r\\n        uint256 survey_id,\\r\\n        uint256 user_id,\\r\\n        string memory date,\\r\\n        uint256 study_id\\r\\n    ) public {\\r\\n        // Store the metadata of Completed Survyes in the map.\\r\\n        _completedsurveyMap[_CompletedSurveyIds] = completed_survey_struct({\\r\\n            completed_survey_id: _CompletedSurveyIds,\\r\\n            study_id: study_id,\\r\\n            user_id: user_id,\\r\\n            survey_id: survey_id,\\r\\n            date: date\\r\\n        });\\r\\n        _surveyMap[survey_id].submission += 1;\\r\\n        _surveyMap[survey_id].date = date;\\r\\n        _CompletedSurveyIds++;\\r\\n    }\\r\\n\\r\\n    function CreateCompletedInformedConsent(\\r\\n        uint256 user_id,\\r\\n        string memory date,\\r\\n        uint256 study_id\\r\\n    ) public {\\r\\n        // Store the metadata of Completed Informed Consent in the map.\\r\\n        _completedinformedMap[\\r\\n            _CompletedInformedConsentIds\\r\\n        ] = completed_informed_consent_struct({\\r\\n            completed_informed_consent_id: _CompletedInformedConsentIds,\\r\\n            study_id: study_id,\\r\\n            user_id: user_id,\\r\\n            date: date\\r\\n        });\\r\\n        _CompletedInformedConsentIds++;\\r\\n    }\\r\\n    function WithDrawAmount(\\r\\n        uint256 userid,\\r\\n        uint256 amount,\\r\\n        address person\\r\\n    ) public {\\r\\n        (bool sent, ) = payable(person).call{value: amount}(\\\"\\\");\\r\\n\\r\\n        require(sent, \\\"Send failed\\\");\\r\\n        _userMap[userid].credits -= amount;\\r\\n    }\\r\\n\\r\\n    function getAllCompletedSurveysIDByUser(\\r\\n        uint256 user_id\\r\\n    ) public view returns (uint256[] memory) {\\r\\n        // Getting all completed surveys id by user id\\r\\n        uint256 _TemporarySearch = 0;\\r\\n\\r\\n        for (uint256 i = 0; i < _CompletedSurveyIds; i++) {\\r\\n            if (_completedsurveyMap[i].user_id == user_id) {\\r\\n                _TemporarySearch++;\\r\\n            }\\r\\n        }\\r\\n        uint256[] memory _SearchedStore = new uint256[](_TemporarySearch);\\r\\n\\r\\n        uint256 _SearchIds2 = 0;\\r\\n\\r\\n        for (uint256 i = 0; i < _CompletedSurveyIds; i++) {\\r\\n            if (_completedsurveyMap[i].user_id == user_id) {\\r\\n                _SearchedStore[_SearchIds2] = i;\\r\\n                _SearchIds2++;\\r\\n            }\\r\\n        }\\r\\n\\r\\n        return _SearchedStore;\\r\\n    }\\r\\n\\r\\n    function getCompletedInformedConsentId(\\r\\n        uint256 user_id,\\r\\n        uint256 study_id\\r\\n    ) public view returns (string memory) {\\r\\n        for (uint256 i = 0; i < _CompletedInformedConsentIds; i++) {\\r\\n            if (\\r\\n                _completedinformedMap[i].user_id == user_id &&\\r\\n                _completedinformedMap[i].study_id == study_id\\r\\n            ) {\\r\\n                return Strings.toString(i);\\r\\n            }\\r\\n        }\\r\\n        return \\\"False\\\";\\r\\n    }\\r\\n}\\r\\n\",\"keccak256\":\"0x8c1a3ae92bdc79d099f7a9e5b5d1febd24d3241463a4471904f161ae6d7496b0\",\"license\":\"MIT\"},\"contracts/lib/Strings.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\n// OpenZeppelin Contracts v4.4.0 (utils/Strings.sol)\\r\\n\\r\\npragma solidity ^0.8.0;\\r\\n\\r\\n/**\\r\\n * @dev String operations.\\r\\n */\\r\\nlibrary Strings {\\r\\n    bytes16 private constant _HEX_SYMBOLS = \\\"0123456789abcdef\\\";\\r\\n\\r\\n    /**\\r\\n     * @dev Converts a `uint256` to its ASCII `string` decimal representation.\\r\\n     */\\r\\n    function toString(uint256 value) internal pure returns (string memory) {\\r\\n        // Inspired by OraclizeAPI's implementation - MIT licence\\r\\n        // https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol\\r\\n\\r\\n        if (value == 0) {\\r\\n            return \\\"0\\\";\\r\\n        }\\r\\n        uint256 temp = value;\\r\\n        uint256 digits;\\r\\n        while (temp != 0) {\\r\\n            digits++;\\r\\n            temp /= 10;\\r\\n        }\\r\\n        bytes memory buffer = new bytes(digits);\\r\\n        while (value != 0) {\\r\\n            digits -= 1;\\r\\n            buffer[digits] = bytes1(uint8(48 + uint256(value % 10)));\\r\\n            value /= 10;\\r\\n        }\\r\\n        return string(buffer);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation.\\r\\n     */\\r\\n    function toHexString(uint256 value) internal pure returns (string memory) {\\r\\n        if (value == 0) {\\r\\n            return \\\"0x00\\\";\\r\\n        }\\r\\n        uint256 temp = value;\\r\\n        uint256 length = 0;\\r\\n        while (temp != 0) {\\r\\n            length++;\\r\\n            temp >>= 8;\\r\\n        }\\r\\n        return toHexString(value, length);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * @dev Converts a `uint256` to its ASCII `string` hexadecimal representation with fixed length.\\r\\n     */\\r\\n    function toHexString(uint256 value, uint256 length) internal pure returns (string memory) {\\r\\n        bytes memory buffer = new bytes(2 * length + 2);\\r\\n        buffer[0] = \\\"0\\\";\\r\\n        buffer[1] = \\\"x\\\";\\r\\n        for (uint256 i = 2 * length + 1; i > 1; --i) {\\r\\n            buffer[i] = _HEX_SYMBOLS[value & 0xf];\\r\\n            value >>= 4;\\r\\n        }\\r\\n        require(value == 0, \\\"Strings: hex length insufficient\\\");\\r\\n        return string(buffer);\\r\\n    }\\r\\n}\",\"keccak256\":\"0x7608e4c2e1f6d0e69276092a0149b7d46d331815684c26edb67c7dab33ba8133\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50614ddc806100206000396000f3fe6080604052600436106102935760003560e01c80639e20c6271161015a578063ce08988c116100c1578063ebe197ca1161007a578063ebe197ca14610a97578063ed65759414610adc578063f0d8e87314610b05578063f6aaa80414610b43578063f8b7800f14610b84578063fc20a88614610bc157610293565b8063ce08988c14610959578063de7acfd714610984578063e57f973f146109c9578063e6576b03146109f2578063ea7efaa614610a2f578063eb6b287014610a6c57610293565b8063b356e1b311610113578063b356e1b314610831578063b6e604bd1461085a578063c13b283614610885578063c482e92e146108c8578063ccef4218146108f3578063cda495c61461093057610293565b80639e20c6271461071c578063a899ef4214610745578063ad23f8f91461076e578063ae7de73f14610797578063aece8c39146107c0578063b105aa431461080857610293565b80634f699a13116101fe57806378119530116101b757806378119530146105e45780637c15641a146106215780637d423e101461064c5780638b23607c1461067557806390b18a78146106b257806390d6cf05146106db57610293565b80634f699a13146104ea5780634f8b36eb146105155780635f27aea11461053e578063633bc2e11461056757806366cad734146105925780636c067b48146105bb57610293565b806329b364231161025057806329b36423146103d75780632e98d8e5146104025780633896f1301461042b5780633b3aecfa146104475780633eebd0d01461048457806349b9b07b146104ad57610293565b806301c661091461029857806307c70d9a146102c35780631429f775146103005780631873de771461032b578063190f20df1461036b5780631c1a9f7b14610394575b600080fd5b3480156102a457600080fd5b506102ad610bfe565b6040516102ba91906136ed565b60405180910390f35b3480156102cf57600080fd5b506102ea60048036038101906102e59190613748565b610c04565b6040516102f7919061380e565b60405180910390f35b34801561030c57600080fd5b50610315610caa565b60405161032291906136ed565b60405180910390f35b34801561033757600080fd5b50610352600480360381019061034d9190613748565b610cb0565b6040516103629493929190613830565b60405180910390f35b34801561037757600080fd5b50610392600480360381019061038d91906139b1565b610d68565b005b3480156103a057600080fd5b506103bb60048036038101906103b69190613748565b610dfb565b6040516103ce9796959493929190613a20565b60405180910390f35b3480156103e357600080fd5b506103ec611178565b6040516103f991906136ed565b60405180910390f35b34801561040e57600080fd5b5061042960048036038101906104249190613ab2565b61117e565b005b61044560048036038101906104409190613b81565b611221565b005b34801561045357600080fd5b5061046e60048036038101906104699190613c93565b611344565b60405161047b919061380e565b60405180910390f35b34801561049057600080fd5b506104ab60048036038101906104a69190613cd3565b6113f6565b005b3480156104b957600080fd5b506104d460048036038101906104cf9190613748565b61145d565b6040516104e19190613e14565b60405180910390f35b3480156104f657600080fd5b506104ff611575565b60405161050c91906136ed565b60405180910390f35b34801561052157600080fd5b5061053c60048036038101906105379190613e36565b61157b565b005b34801561054a57600080fd5b5061056560048036038101906105609190613ab2565b6115fe565b005b34801561057357600080fd5b5061057c6116a1565b60405161058991906136ed565b60405180910390f35b34801561059e57600080fd5b506105b960048036038101906105b49190613eae565b6116a7565b005b3480156105c757600080fd5b506105e260048036038101906105dd9190613f0a565b6116d3565b005b3480156105f057600080fd5b5061060b60048036038101906106069190613748565b6117bf565b604051610618919061380e565b60405180910390f35b34801561062d57600080fd5b5061063661185f565b60405161064391906136ed565b60405180910390f35b34801561065857600080fd5b50610673600480360381019061066e9190613feb565b611865565b005b34801561068157600080fd5b5061069c60048036038101906106979190613748565b611962565b6040516106a99190613e14565b60405180910390f35b3480156106be57600080fd5b506106d960048036038101906106d49190613eae565b611a7a565b005b3480156106e757600080fd5b5061070260048036038101906106fd9190613748565b611aa9565b60405161071395949392919061406e565b60405180910390f35b34801561072857600080fd5b50610743600480360381019061073e91906140c8565b611b67565b005b34801561075157600080fd5b5061076c60048036038101906107679190614167565b611c4c565b005b34801561077a57600080fd5b5061079560048036038101906107909190613eae565b611deb565b005b3480156107a357600080fd5b506107be60048036038101906107b9919061428d565b611e17565b005b3480156107cc57600080fd5b506107e760048036038101906107e29190613748565b611fc1565b6040516107ff9c9b9a99989796959493929190614468565b60405180910390f35b34801561081457600080fd5b5061082f600480360381019061082a9190613eae565b6122c9565b005b34801561083d57600080fd5b50610858600480360381019061085391906145a3565b6122f5565b005b34801561086657600080fd5b5061086f6123d4565b60405161087c91906136ed565b60405180910390f35b34801561089157600080fd5b506108ac60048036038101906108a79190613748565b6123da565b6040516108bf97969594939291906145f6565b60405180910390f35b3480156108d457600080fd5b506108dd6125b4565b6040516108ea91906136ed565b60405180910390f35b3480156108ff57600080fd5b5061091a60048036038101906109159190613e36565b6125ba565b604051610927919061380e565b60405180910390f35b34801561093c57600080fd5b506109576004803603810190610952919061467a565b6126a2565b005b34801561096557600080fd5b5061096e61284c565b60405161097b91906136ed565b60405180910390f35b34801561099057600080fd5b506109ab60048036038101906109a69190613748565b612852565b6040516109c0999897969594939291906147af565b60405180910390f35b3480156109d557600080fd5b506109f060048036038101906109eb91906139b1565b612ac0565b005b3480156109fe57600080fd5b50610a196004803603810190610a149190613748565b612b0b565b604051610a26919061380e565b60405180910390f35b348015610a3b57600080fd5b50610a566004803603810190610a519190613748565b612bab565b604051610a63919061380e565b60405180910390f35b348015610a7857600080fd5b50610a81612c4b565b604051610a8e91906136ed565b60405180910390f35b348015610aa357600080fd5b50610abe6004803603810190610ab99190613748565b612c51565b604051610ad399989796959493929190614858565b60405180910390f35b348015610ae857600080fd5b50610b036004803603810190610afe9190613eae565b6130df565b005b348015610b1157600080fd5b50610b2c6004803603810190610b279190613748565b61310b565b604051610b3a92919061491d565b60405180910390f35b348015610b4f57600080fd5b50610b6a6004803603810190610b659190613748565b61323f565b604051610b7b959493929190614954565b60405180910390f35b348015610b9057600080fd5b50610bab6004803603810190610ba691906149b5565b613385565b604051610bb8919061380e565b60405180910390f35b348015610bcd57600080fd5b50610be86004803603810190610be39190613748565b613430565b604051610bf5919061380e565b60405180910390f35b60075481565b606060005b600654811015610c6b578260136000838152602001908152602001600020600201541415610c5857610c5060136000838152602001908152602001600020600101546134d0565b915050610ca5565b8080610c6390614a2d565b915050610c09565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b919050565b60045481565b6016602052806000526040600020600091509050806000015490806001015490806002015490806003018054610ce590614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610d1190614aa5565b8015610d5e5780601f10610d3357610100808354040283529160200191610d5e565b820191906000526020600020905b815481529060010190602001808311610d4157829003601f168201915b5050505050905084565b60405180608001604052806009548152602001828152602001848152602001838152506016600060095481526020019081526020016000206000820151816000015560208201518160010155604082015181600201556060820151816003019080519060200190610dda929190613631565b5090505060096000815480929190610df190614a2d565b9190505550505050565b606060006060806060806000600a6000898152602001908152602001600020600501600a60008a815260200190815260200160002060060154600a60008b8152602001908152602001600020600101600a60008c8152602001908152602001600020600201600a60008d8152602001908152602001600020600401600a60008e8152602001908152602001600020600701600a60008f815260200190815260200160002060080154868054610eaf90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610edb90614aa5565b8015610f285780601f10610efd57610100808354040283529160200191610f28565b820191906000526020600020905b815481529060010190602001808311610f0b57829003601f168201915b50505050509650848054610f3b90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610f6790614aa5565b8015610fb45780601f10610f8957610100808354040283529160200191610fb4565b820191906000526020600020905b815481529060010190602001808311610f9757829003601f168201915b50505050509450838054610fc790614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610ff390614aa5565b80156110405780601f1061101557610100808354040283529160200191611040565b820191906000526020600020905b81548152906001019060200180831161102357829003601f168201915b5050505050935082805461105390614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461107f90614aa5565b80156110cc5780601f106110a1576101008083540402835291602001916110cc565b820191906000526020600020905b8154815290600101906020018083116110af57829003601f168201915b505050505092508180546110df90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461110b90614aa5565b80156111585780601f1061112d57610100808354040283529160200191611158565b820191906000526020600020905b81548152906001019060200180831161113b57829003601f168201915b505050505091509650965096509650965096509650919395979092949650565b60055481565b83600b600087815260200190815260200160002060020190805190602001906111a8929190613631565b5082600b600087815260200190815260200160002060030190805190602001906111d3929190613631565b5081600b600087815260200190815260200160002060040190805190602001906111fe929190613631565b5080600b6000878152602001908152602001600020600801819055505050505050565b60405180610120016040528060045481526020018881526020018781526020018681526020018581526020018481526020018381526020018281526020016000815250600f6000600454815260200190815260200160002060008201518160000155602082015181600101556040820151816002015560608201518160030190805190602001906112b3929190613631565b5060808201518160040190805190602001906112d0929190613631565b5060a08201518160050190805190602001906112ed929190613631565b5060c082015181600601908051906020019061130a929190613631565b5060e0820151816007015561010082015181600801559050506004600081548092919061133690614a2d565b919050555050505050505050565b606060005b6009548110156113b65783601660008381526020019081526020016000206002015414801561138d5750826016600083815260200190815260200160002060010154145b156113a35761139b816134d0565b9150506113f0565b80806113ae90614a2d565b915050611349565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b92915050565b82600b60008681526020019081526020016000206009019080519060200190611420929190613631565b5081600b6000868152602001908152602001600020600a018190555080600b6000868152602001908152602001600020600b018190555050505050565b60606000805b6008548110156114ad57836015600083815260200190815260200160002060020154141561149a57818061149690614a2d565b9250505b80806114a590614a2d565b915050611463565b5060008167ffffffffffffffff8111156114ca576114c9613886565b5b6040519080825280602002602001820160405280156114f85781602001602082028036833780820191505090505b5090506000805b600854811015611569578560156000838152602001908152602001600020600201541415611556578083838151811061153b5761153a614ad7565b5b602002602001018181525050818061155290614a2d565b9250505b808061156190614a2d565b9150506114ff565b50819350505050919050565b60095481565b60405180604001604052808381526020018281525060106000600554815260200190815260200160002060008201518160000190805190602001906115c1929190613631565b5060208201518160010190805190602001906115de929190613631565b50905050600560008154809291906115f590614a2d565b91905055505050565b83600f60008781526020019081526020016000206003019080519060200190611628929190613631565b5082600f60008781526020019081526020016000206004019080519060200190611653929190613631565b5081600f6000878152602001908152602001600020600601908051906020019061167e929190613631565b5080600f6000878152602001908152602001600020600701819055505050505050565b60035481565b806011600084815260200190815260200160002090805190602001906116ce929190613631565b505050565b6040518060e00160405280600754815260200187815260200186815260200185815260200184815260200183815260200182815250601460006007548152602001908152602001600020600082015181600001556020820151816001015560408201518160020155606082015181600301556080820151816004019080519060200190611761929190613631565b5060a082015181600501908051906020019061177e929190613631565b5060c082015181600601908051906020019061179b929190613631565b50905050600760008154809291906117b290614a2d565b9190505550505050505050565b600d60205280600052604060002060009150905080546117de90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461180a90614aa5565b80156118575780601f1061182c57610100808354040283529160200191611857565b820191906000526020600020905b81548152906001019060200180831161183a57829003601f168201915b505050505081565b60015481565b6040518060a001604052806008548152602001828152602001848152602001858152602001838152506015600060085481526020019081526020016000206000820151816000015560208201518160010155604082015181600201556060820151816003015560808201518160040190805190602001906118e7929190613631565b509050506001600f600086815260200190815260200160002060080160008282546119129190614b06565b9250508190555081600f60008681526020019081526020016000206005019080519060200190611943929190613631565b506008600081548092919061195790614a2d565b919050555050505050565b60606000805b6004548110156119b25783600f600083815260200190815260200160002060010154141561199f57818061199b90614a2d565b9250505b80806119aa90614a2d565b915050611968565b5060008167ffffffffffffffff8111156119cf576119ce613886565b5b6040519080825280602002602001820160405280156119fd5781602001602082028036833780820191505090505b5090506000805b600454811015611a6e5785600f6000838152602001908152602001600020600101541415611a5b5780838381518110611a4057611a3f614ad7565b5b6020026020010181815250508180611a5790614a2d565b9250505b8080611a6690614a2d565b915050611a04565b50819350505050919050565b80600a60008481526020019081526020016000206007019080519060200190611aa4929190613631565b505050565b6015602052806000526040600020600091509050806000015490806001015490806002015490806003015490806004018054611ae490614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054611b1090614aa5565b8015611b5d5780601f10611b3257610100808354040283529160200191611b5d565b820191906000526020600020905b815481529060010190602001808311611b4057829003601f168201915b5050505050905085565b6040518060a001604052806006548152602001858152602001848152602001838152602001828152506013600060065481526020019081526020016000206000820151816000015560208201518160010155604082015181600201556060820151816003019080519060200190611bdf929190613631565b506080820151816004019080519060200190611bfc929190613631565b509050506001600b60008681526020019081526020016000206006016000828254611c279190614b06565b9250508190555060066000815480929190611c4190614a2d565b919050555050505050565b60405180610180016040528060025481526020018981526020018881526020018781526020018681526020018581526020018481526020018381526020018281526020016040518060400160405280600481526020017f484241520000000000000000000000000000000000000000000000000000000081525081526020016000815260200182815250600b6000600254815260200190815260200160002060008201518160000155602082015181600101556040820151816002019080519060200190611d1b929190613631565b506060820151816003019080519060200190611d38929190613631565b506080820151816004019080519060200190611d55929190613631565b5060a0820151816005019080519060200190611d72929190613631565b5060c0820151816006015560e082015181600701556101008201518160080155610120820151816009019080519060200190611daf929190613631565b5061014082015181600a015561016082015181600b015590505060026000815480929190611ddc90614a2d565b91905055505050505050505050565b80600e60008481526020019081526020016000209080519060200190611e12929190613631565b505050565b89601260008c81526020019081526020016000206000018190555087601260008c81526020019081526020016000206001019080519060200190611e5c929190613631565b5086601260008c81526020019081526020016000206002019080519060200190611e87929190613631565b5085601260008c81526020019081526020016000206003019080519060200190611eb2929190613631565b5084601260008c81526020019081526020016000206004019080519060200190611edd929190613631565b5083601260008c81526020019081526020016000206005019080519060200190611f08929190613631565b5082601260008c81526020019081526020016000206006019080519060200190611f33929190613631565b5081601260008c81526020019081526020016000206007019080519060200190611f5e929190613631565b5080601260008c81526020019081526020016000206008019080519060200190611f89929190613631565b5088600a60008c81526020019081526020016000206004019080519060200190611fb4929190613631565b5050505050505050505050565b600b602052806000526040600020600091509050806000015490806001015490806002018054611ff090614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461201c90614aa5565b80156120695780601f1061203e57610100808354040283529160200191612069565b820191906000526020600020905b81548152906001019060200180831161204c57829003601f168201915b50505050509080600301805461207e90614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546120aa90614aa5565b80156120f75780601f106120cc576101008083540402835291602001916120f7565b820191906000526020600020905b8154815290600101906020018083116120da57829003601f168201915b50505050509080600401805461210c90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461213890614aa5565b80156121855780601f1061215a57610100808354040283529160200191612185565b820191906000526020600020905b81548152906001019060200180831161216857829003601f168201915b50505050509080600501805461219a90614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546121c690614aa5565b80156122135780601f106121e857610100808354040283529160200191612213565b820191906000526020600020905b8154815290600101906020018083116121f657829003601f168201915b50505050509080600601549080600701549080600801549080600901805461223a90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461226690614aa5565b80156122b35780601f10612288576101008083540402835291602001916122b3565b820191906000526020600020905b81548152906001019060200180831161229657829003601f168201915b50505050509080600a01549080600b015490508c565b80600c600084815260200190815260200160002090805190602001906122f0929190613631565b505050565b60008173ffffffffffffffffffffffffffffffffffffffff168360405161231b90614b8d565b60006040518083038185875af1925050503d8060008114612358576040519150601f19603f3d011682016040523d82523d6000602084013e61235d565b606091505b50509050806123a1576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161239890614bee565b60405180910390fd5b82600a600086815260200190815260200160002060060160008282546123c79190614c0e565b9250508190555050505050565b60085481565b601460205280600052604060002060009150905080600001549080600101549080600201549080600301549080600401805461241590614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461244190614aa5565b801561248e5780601f106124635761010080835404028352916020019161248e565b820191906000526020600020905b81548152906001019060200180831161247157829003601f168201915b5050505050908060050180546124a390614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546124cf90614aa5565b801561251c5780601f106124f15761010080835404028352916020019161251c565b820191906000526020600020905b8154815290600101906020018083116124ff57829003601f168201915b50505050509080600601805461253190614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461255d90614aa5565b80156125aa5780601f1061257f576101008083540402835291602001916125aa565b820191906000526020600020905b81548152906001019060200180831161258d57829003601f168201915b5050505050905087565b60025481565b606060005b600054811015612662578380519060200120600a60008381526020019081526020016000206002016040516125f49190614cd6565b604051809103902014801561263957508280519060200120600a600083815260200190815260200160002060030160405161262f9190614cd6565b6040518091039020145b1561264f57612647816134d0565b91505061269c565b808061265a90614a2d565b9150506125bf565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b92915050565b6040518061012001604052806000548152602001878152602001868152602001858152602001838152602001604051806060016040528060288152602001614d7f60289139815260200160008152602001848152602001600054815250600a600080548152602001908152602001600020600082015181600001556020820151816001019080519060200190612739929190613631565b506040820151816002019080519060200190612756929190613631565b506060820151816003019080519060200190612773929190613631565b506080820151816004019080519060200190612790929190613631565b5060a08201518160050190805190602001906127ad929190613631565b5060c0820151816006015560e08201518160070190805190602001906127d4929190613631565b506101008201518160080155905050806012600080548152602001908152602001600020600601908051906020019061280e929190613631565b5060005460126000805481526020019081526020016000206000018190555060008081548092919061283f90614a2d565b9190505550505050505050565b60005481565b600f60205280600052604060002060009150905080600001549080600101549080600201549080600301805461288790614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546128b390614aa5565b80156129005780601f106128d557610100808354040283529160200191612900565b820191906000526020600020905b8154815290600101906020018083116128e357829003601f168201915b50505050509080600401805461291590614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461294190614aa5565b801561298e5780601f106129635761010080835404028352916020019161298e565b820191906000526020600020905b81548152906001019060200180831161297157829003601f168201915b5050505050908060050180546129a390614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546129cf90614aa5565b8015612a1c5780601f106129f157610100808354040283529160200191612a1c565b820191906000526020600020905b8154815290600101906020018083116129ff57829003601f168201915b505050505090806006018054612a3190614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612a5d90614aa5565b8015612aaa5780601f10612a7f57610100808354040283529160200191612aaa565b820191906000526020600020905b815481529060010190602001808311612a8d57829003601f168201915b5050505050908060070154908060080154905089565b81600a60008581526020019081526020016000206005019080519060200190612aea929190613631565b5080600a600085815260200190815260200160002060060181905550505050565b600c6020528060005260406000206000915090508054612b2a90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612b5690614aa5565b8015612ba35780601f10612b7857610100808354040283529160200191612ba3565b820191906000526020600020905b815481529060010190602001808311612b8657829003601f168201915b505050505081565b60116020528060005260406000206000915090508054612bca90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612bf690614aa5565b8015612c435780601f10612c1857610100808354040283529160200191612c43565b820191906000526020600020905b815481529060010190602001808311612c2657829003601f168201915b505050505081565b60065481565b6012602052806000526040600020600091509050806000015490806001018054612c7a90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612ca690614aa5565b8015612cf35780601f10612cc857610100808354040283529160200191612cf3565b820191906000526020600020905b815481529060010190602001808311612cd657829003601f168201915b505050505090806002018054612d0890614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612d3490614aa5565b8015612d815780601f10612d5657610100808354040283529160200191612d81565b820191906000526020600020905b815481529060010190602001808311612d6457829003601f168201915b505050505090806003018054612d9690614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612dc290614aa5565b8015612e0f5780601f10612de457610100808354040283529160200191612e0f565b820191906000526020600020905b815481529060010190602001808311612df257829003601f168201915b505050505090806004018054612e2490614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612e5090614aa5565b8015612e9d5780601f10612e7257610100808354040283529160200191612e9d565b820191906000526020600020905b815481529060010190602001808311612e8057829003601f168201915b505050505090806005018054612eb290614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612ede90614aa5565b8015612f2b5780601f10612f0057610100808354040283529160200191612f2b565b820191906000526020600020905b815481529060010190602001808311612f0e57829003601f168201915b505050505090806006018054612f4090614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612f6c90614aa5565b8015612fb95780601f10612f8e57610100808354040283529160200191612fb9565b820191906000526020600020905b815481529060010190602001808311612f9c57829003601f168201915b505050505090806007018054612fce90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612ffa90614aa5565b80156130475780601f1061301c57610100808354040283529160200191613047565b820191906000526020600020905b81548152906001019060200180831161302a57829003601f168201915b50505050509080600801805461305c90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461308890614aa5565b80156130d55780601f106130aa576101008083540402835291602001916130d5565b820191906000526020600020905b8154815290600101906020018083116130b857829003601f168201915b5050505050905089565b80600d60008481526020019081526020016000209080519060200190613106929190613631565b505050565b601060205280600052604060002060009150905080600001805461312e90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461315a90614aa5565b80156131a75780601f1061317c576101008083540402835291602001916131a7565b820191906000526020600020905b81548152906001019060200180831161318a57829003601f168201915b5050505050908060010180546131bc90614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546131e890614aa5565b80156132355780601f1061320a57610100808354040283529160200191613235565b820191906000526020600020905b81548152906001019060200180831161321857829003601f168201915b5050505050905082565b601360205280600052604060002060009150905080600001549080600101549080600201549080600301805461327490614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546132a090614aa5565b80156132ed5780601f106132c2576101008083540402835291602001916132ed565b820191906000526020600020905b8154815290600101906020018083116132d057829003601f168201915b50505050509080600401805461330290614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461332e90614aa5565b801561337b5780601f106133505761010080835404028352916020019161337b565b820191906000526020600020905b81548152906001019060200180831161335e57829003601f168201915b5050505050905085565b606060005b6000548110156133f1578280519060200120600a60008381526020019081526020016000206002016040516133bf9190614cd6565b604051809103902014156133de576133d6816134d0565b91505061342b565b80806133e990614a2d565b91505061338a565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b919050565b600e602052806000526040600020600091509050805461344f90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461347b90614aa5565b80156134c85780601f1061349d576101008083540402835291602001916134c8565b820191906000526020600020905b8154815290600101906020018083116134ab57829003601f168201915b505050505081565b60606000821415613518576040518060400160405280600181526020017f3000000000000000000000000000000000000000000000000000000000000000815250905061362c565b600082905060005b6000821461354a57808061353390614a2d565b915050600a826135439190614d1c565b9150613520565b60008167ffffffffffffffff81111561356657613565613886565b5b6040519080825280601f01601f1916602001820160405280156135985781602001600182028036833780820191505090505b5090505b60008514613625576001826135b19190614c0e565b9150600a856135c09190614d4d565b60306135cc9190614b06565b60f81b8183815181106135e2576135e1614ad7565b5b60200101907effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916908160001a905350600a8561361e9190614d1c565b945061359c565b8093505050505b919050565b82805461363d90614aa5565b90600052602060002090601f01602090048101928261365f57600085556136a6565b82601f1061367857805160ff19168380011785556136a6565b828001600101855582156136a6579182015b828111156136a557825182559160200191906001019061368a565b5b5090506136b391906136b7565b5090565b5b808211156136d05760008160009055506001016136b8565b5090565b6000819050919050565b6136e7816136d4565b82525050565b600060208201905061370260008301846136de565b92915050565b6000604051905090565b600080fd5b600080fd5b613725816136d4565b811461373057600080fd5b50565b6000813590506137428161371c565b92915050565b60006020828403121561375e5761375d613712565b5b600061376c84828501613733565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b838110156137af578082015181840152602081019050613794565b838111156137be576000848401525b50505050565b6000601f19601f8301169050919050565b60006137e082613775565b6137ea8185613780565b93506137fa818560208601613791565b613803816137c4565b840191505092915050565b6000602082019050818103600083015261382881846137d5565b905092915050565b600060808201905061384560008301876136de565b61385260208301866136de565b61385f60408301856136de565b818103606083015261387181846137d5565b905095945050505050565b600080fd5b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6138be826137c4565b810181811067ffffffffffffffff821117156138dd576138dc613886565b5b80604052505050565b60006138f0613708565b90506138fc82826138b5565b919050565b600067ffffffffffffffff82111561391c5761391b613886565b5b613925826137c4565b9050602081019050919050565b82818337600083830152505050565b600061395461394f84613901565b6138e6565b9050828152602081018484840111156139705761396f613881565b5b61397b848285613932565b509392505050565b600082601f8301126139985761399761387c565b5b81356139a8848260208601613941565b91505092915050565b6000806000606084860312156139ca576139c9613712565b5b60006139d886828701613733565b935050602084013567ffffffffffffffff8111156139f9576139f8613717565b5b613a0586828701613983565b9250506040613a1686828701613733565b9150509250925092565b600060e0820190508181036000830152613a3a818a6137d5565b9050613a4960208301896136de565b8181036040830152613a5b81886137d5565b90508181036060830152613a6f81876137d5565b90508181036080830152613a8381866137d5565b905081810360a0830152613a9781856137d5565b9050613aa660c08301846136de565b98975050505050505050565b600080600080600060a08688031215613ace57613acd613712565b5b6000613adc88828901613733565b955050602086013567ffffffffffffffff811115613afd57613afc613717565b5b613b0988828901613983565b945050604086013567ffffffffffffffff811115613b2a57613b29613717565b5b613b3688828901613983565b935050606086013567ffffffffffffffff811115613b5757613b56613717565b5b613b6388828901613983565b9250506080613b7488828901613733565b9150509295509295909350565b600080600080600080600060e0888a031215613ba057613b9f613712565b5b6000613bae8a828b01613733565b9750506020613bbf8a828b01613733565b965050604088013567ffffffffffffffff811115613be057613bdf613717565b5b613bec8a828b01613983565b955050606088013567ffffffffffffffff811115613c0d57613c0c613717565b5b613c198a828b01613983565b945050608088013567ffffffffffffffff811115613c3a57613c39613717565b5b613c468a828b01613983565b93505060a088013567ffffffffffffffff811115613c6757613c66613717565b5b613c738a828b01613983565b92505060c0613c848a828b01613733565b91505092959891949750929550565b60008060408385031215613caa57613ca9613712565b5b6000613cb885828601613733565b9250506020613cc985828601613733565b9150509250929050565b60008060008060808587031215613ced57613cec613712565b5b6000613cfb87828801613733565b945050602085013567ffffffffffffffff811115613d1c57613d1b613717565b5b613d2887828801613983565b9350506040613d3987828801613733565b9250506060613d4a87828801613733565b91505092959194509250565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b613d8b816136d4565b82525050565b6000613d9d8383613d82565b60208301905092915050565b6000602082019050919050565b6000613dc182613d56565b613dcb8185613d61565b9350613dd683613d72565b8060005b83811015613e07578151613dee8882613d91565b9750613df983613da9565b925050600181019050613dda565b5085935050505092915050565b60006020820190508181036000830152613e2e8184613db6565b905092915050565b60008060408385031215613e4d57613e4c613712565b5b600083013567ffffffffffffffff811115613e6b57613e6a613717565b5b613e7785828601613983565b925050602083013567ffffffffffffffff811115613e9857613e97613717565b5b613ea485828601613983565b9150509250929050565b60008060408385031215613ec557613ec4613712565b5b6000613ed385828601613733565b925050602083013567ffffffffffffffff811115613ef457613ef3613717565b5b613f0085828601613983565b9150509250929050565b60008060008060008060c08789031215613f2757613f26613712565b5b6000613f3589828a01613733565b9650506020613f4689828a01613733565b9550506040613f5789828a01613733565b945050606087013567ffffffffffffffff811115613f7857613f77613717565b5b613f8489828a01613983565b935050608087013567ffffffffffffffff811115613fa557613fa4613717565b5b613fb189828a01613983565b92505060a087013567ffffffffffffffff811115613fd257613fd1613717565b5b613fde89828a01613983565b9150509295509295509295565b6000806000806080858703121561400557614004613712565b5b600061401387828801613733565b945050602061402487828801613733565b935050604085013567ffffffffffffffff81111561404557614044613717565b5b61405187828801613983565b925050606061406287828801613733565b91505092959194509250565b600060a08201905061408360008301886136de565b61409060208301876136de565b61409d60408301866136de565b6140aa60608301856136de565b81810360808301526140bc81846137d5565b90509695505050505050565b600080600080608085870312156140e2576140e1613712565b5b60006140f087828801613733565b945050602061410187828801613733565b935050604085013567ffffffffffffffff81111561412257614121613717565b5b61412e87828801613983565b925050606085013567ffffffffffffffff81111561414f5761414e613717565b5b61415b87828801613983565b91505092959194509250565b600080600080600080600080610100898b03121561418857614187613712565b5b60006141968b828c01613733565b985050602089013567ffffffffffffffff8111156141b7576141b6613717565b5b6141c38b828c01613983565b975050604089013567ffffffffffffffff8111156141e4576141e3613717565b5b6141f08b828c01613983565b965050606089013567ffffffffffffffff81111561421157614210613717565b5b61421d8b828c01613983565b955050608089013567ffffffffffffffff81111561423e5761423d613717565b5b61424a8b828c01613983565b94505060a061425b8b828c01613733565b93505060c061426c8b828c01613733565b92505060e061427d8b828c01613733565b9150509295985092959890939650565b6000806000806000806000806000806101408b8d0312156142b1576142b0613712565b5b60006142bf8d828e01613733565b9a505060208b013567ffffffffffffffff8111156142e0576142df613717565b5b6142ec8d828e01613983565b99505060408b013567ffffffffffffffff81111561430d5761430c613717565b5b6143198d828e01613983565b98505060608b013567ffffffffffffffff81111561433a57614339613717565b5b6143468d828e01613983565b97505060808b013567ffffffffffffffff81111561436757614366613717565b5b6143738d828e01613983565b96505060a08b013567ffffffffffffffff81111561439457614393613717565b5b6143a08d828e01613983565b95505060c08b013567ffffffffffffffff8111156143c1576143c0613717565b5b6143cd8d828e01613983565b94505060e08b013567ffffffffffffffff8111156143ee576143ed613717565b5b6143fa8d828e01613983565b9350506101008b013567ffffffffffffffff81111561441c5761441b613717565b5b6144288d828e01613983565b9250506101208b013567ffffffffffffffff81111561444a57614449613717565b5b6144568d828e01613983565b9150509295989b9194979a5092959850565b60006101808201905061447e600083018f6136de565b61448b602083018e6136de565b818103604083015261449d818d6137d5565b905081810360608301526144b1818c6137d5565b905081810360808301526144c5818b6137d5565b905081810360a08301526144d9818a6137d5565b90506144e860c08301896136de565b6144f560e08301886136de565b6145036101008301876136de565b81810361012083015261451681866137d5565b90506145266101408301856136de565b6145346101608301846136de565b9d9c50505050505050505050505050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061457082614545565b9050919050565b61458081614565565b811461458b57600080fd5b50565b60008135905061459d81614577565b92915050565b6000806000606084860312156145bc576145bb613712565b5b60006145ca86828701613733565b93505060206145db86828701613733565b92505060406145ec8682870161458e565b9150509250925092565b600060e08201905061460b600083018a6136de565b61461860208301896136de565b61462560408301886136de565b61463260608301876136de565b818103608083015261464481866137d5565b905081810360a083015261465881856137d5565b905081810360c083015261466c81846137d5565b905098975050505050505050565b60008060008060008060c0878903121561469757614696613712565b5b600087013567ffffffffffffffff8111156146b5576146b4613717565b5b6146c189828a01613983565b965050602087013567ffffffffffffffff8111156146e2576146e1613717565b5b6146ee89828a01613983565b955050604087013567ffffffffffffffff81111561470f5761470e613717565b5b61471b89828a01613983565b945050606087013567ffffffffffffffff81111561473c5761473b613717565b5b61474889828a01613983565b935050608087013567ffffffffffffffff81111561476957614768613717565b5b61477589828a01613983565b92505060a087013567ffffffffffffffff81111561479657614795613717565b5b6147a289828a01613983565b9150509295509295509295565b6000610120820190506147c5600083018c6136de565b6147d2602083018b6136de565b6147df604083018a6136de565b81810360608301526147f181896137d5565b9050818103608083015261480581886137d5565b905081810360a083015261481981876137d5565b905081810360c083015261482d81866137d5565b905061483c60e08301856136de565b61484a6101008301846136de565b9a9950505050505050505050565b60006101208201905061486e600083018c6136de565b8181036020830152614880818b6137d5565b90508181036040830152614894818a6137d5565b905081810360608301526148a881896137d5565b905081810360808301526148bc81886137d5565b905081810360a08301526148d081876137d5565b905081810360c08301526148e481866137d5565b905081810360e08301526148f881856137d5565b905081810361010083015261490d81846137d5565b90509a9950505050505050505050565b6000604082019050818103600083015261493781856137d5565b9050818103602083015261494b81846137d5565b90509392505050565b600060a08201905061496960008301886136de565b61497660208301876136de565b61498360408301866136de565b818103606083015261499581856137d5565b905081810360808301526149a981846137d5565b90509695505050505050565b6000602082840312156149cb576149ca613712565b5b600082013567ffffffffffffffff8111156149e9576149e8613717565b5b6149f584828501613983565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000614a38826136d4565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415614a6b57614a6a6149fe565b5b600182019050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680614abd57607f821691505b60208210811415614ad157614ad0614a76565b5b50919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b6000614b11826136d4565b9150614b1c836136d4565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff03821115614b5157614b506149fe565b5b828201905092915050565b600081905092915050565b50565b6000614b77600083614b5c565b9150614b8282614b67565b600082019050919050565b6000614b9882614b6a565b9150819050919050565b7f53656e64206661696c6564000000000000000000000000000000000000000000600082015250565b6000614bd8600b83613780565b9150614be382614ba2565b602082019050919050565b60006020820190508181036000830152614c0781614bcb565b9050919050565b6000614c19826136d4565b9150614c24836136d4565b925082821015614c3757614c366149fe565b5b828203905092915050565b60008190508160005260206000209050919050565b60008154614c6481614aa5565b614c6e8186614b5c565b94506001821660008114614c895760018114614c9a57614ccd565b60ff19831686528186019350614ccd565b614ca385614c42565b60005b83811015614cc557815481890152600182019150602081019050614ca6565b838801955050505b50505092915050565b6000614ce28284614c57565b915081905092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b6000614d27826136d4565b9150614d32836136d4565b925082614d4257614d41614ced565b5b828204905092915050565b6000614d58826136d4565b9150614d63836136d4565b925082614d7357614d72614ced565b5b82820690509291505056fe68747470733a2f2f692e706f7374696d672e63632f537378477735635a2f706572736f6e2e6a7067a26469706673582212205e28bd4ff711ea652e284c72485eb3464cbafc672dff4b2c9663997747597dd564736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600436106102935760003560e01c80639e20c6271161015a578063ce08988c116100c1578063ebe197ca1161007a578063ebe197ca14610a97578063ed65759414610adc578063f0d8e87314610b05578063f6aaa80414610b43578063f8b7800f14610b84578063fc20a88614610bc157610293565b8063ce08988c14610959578063de7acfd714610984578063e57f973f146109c9578063e6576b03146109f2578063ea7efaa614610a2f578063eb6b287014610a6c57610293565b8063b356e1b311610113578063b356e1b314610831578063b6e604bd1461085a578063c13b283614610885578063c482e92e146108c8578063ccef4218146108f3578063cda495c61461093057610293565b80639e20c6271461071c578063a899ef4214610745578063ad23f8f91461076e578063ae7de73f14610797578063aece8c39146107c0578063b105aa431461080857610293565b80634f699a13116101fe57806378119530116101b757806378119530146105e45780637c15641a146106215780637d423e101461064c5780638b23607c1461067557806390b18a78146106b257806390d6cf05146106db57610293565b80634f699a13146104ea5780634f8b36eb146105155780635f27aea11461053e578063633bc2e11461056757806366cad734146105925780636c067b48146105bb57610293565b806329b364231161025057806329b36423146103d75780632e98d8e5146104025780633896f1301461042b5780633b3aecfa146104475780633eebd0d01461048457806349b9b07b146104ad57610293565b806301c661091461029857806307c70d9a146102c35780631429f775146103005780631873de771461032b578063190f20df1461036b5780631c1a9f7b14610394575b600080fd5b3480156102a457600080fd5b506102ad610bfe565b6040516102ba91906136ed565b60405180910390f35b3480156102cf57600080fd5b506102ea60048036038101906102e59190613748565b610c04565b6040516102f7919061380e565b60405180910390f35b34801561030c57600080fd5b50610315610caa565b60405161032291906136ed565b60405180910390f35b34801561033757600080fd5b50610352600480360381019061034d9190613748565b610cb0565b6040516103629493929190613830565b60405180910390f35b34801561037757600080fd5b50610392600480360381019061038d91906139b1565b610d68565b005b3480156103a057600080fd5b506103bb60048036038101906103b69190613748565b610dfb565b6040516103ce9796959493929190613a20565b60405180910390f35b3480156103e357600080fd5b506103ec611178565b6040516103f991906136ed565b60405180910390f35b34801561040e57600080fd5b5061042960048036038101906104249190613ab2565b61117e565b005b61044560048036038101906104409190613b81565b611221565b005b34801561045357600080fd5b5061046e60048036038101906104699190613c93565b611344565b60405161047b919061380e565b60405180910390f35b34801561049057600080fd5b506104ab60048036038101906104a69190613cd3565b6113f6565b005b3480156104b957600080fd5b506104d460048036038101906104cf9190613748565b61145d565b6040516104e19190613e14565b60405180910390f35b3480156104f657600080fd5b506104ff611575565b60405161050c91906136ed565b60405180910390f35b34801561052157600080fd5b5061053c60048036038101906105379190613e36565b61157b565b005b34801561054a57600080fd5b5061056560048036038101906105609190613ab2565b6115fe565b005b34801561057357600080fd5b5061057c6116a1565b60405161058991906136ed565b60405180910390f35b34801561059e57600080fd5b506105b960048036038101906105b49190613eae565b6116a7565b005b3480156105c757600080fd5b506105e260048036038101906105dd9190613f0a565b6116d3565b005b3480156105f057600080fd5b5061060b60048036038101906106069190613748565b6117bf565b604051610618919061380e565b60405180910390f35b34801561062d57600080fd5b5061063661185f565b60405161064391906136ed565b60405180910390f35b34801561065857600080fd5b50610673600480360381019061066e9190613feb565b611865565b005b34801561068157600080fd5b5061069c60048036038101906106979190613748565b611962565b6040516106a99190613e14565b60405180910390f35b3480156106be57600080fd5b506106d960048036038101906106d49190613eae565b611a7a565b005b3480156106e757600080fd5b5061070260048036038101906106fd9190613748565b611aa9565b60405161071395949392919061406e565b60405180910390f35b34801561072857600080fd5b50610743600480360381019061073e91906140c8565b611b67565b005b34801561075157600080fd5b5061076c60048036038101906107679190614167565b611c4c565b005b34801561077a57600080fd5b5061079560048036038101906107909190613eae565b611deb565b005b3480156107a357600080fd5b506107be60048036038101906107b9919061428d565b611e17565b005b3480156107cc57600080fd5b506107e760048036038101906107e29190613748565b611fc1565b6040516107ff9c9b9a99989796959493929190614468565b60405180910390f35b34801561081457600080fd5b5061082f600480360381019061082a9190613eae565b6122c9565b005b34801561083d57600080fd5b50610858600480360381019061085391906145a3565b6122f5565b005b34801561086657600080fd5b5061086f6123d4565b60405161087c91906136ed565b60405180910390f35b34801561089157600080fd5b506108ac60048036038101906108a79190613748565b6123da565b6040516108bf97969594939291906145f6565b60405180910390f35b3480156108d457600080fd5b506108dd6125b4565b6040516108ea91906136ed565b60405180910390f35b3480156108ff57600080fd5b5061091a60048036038101906109159190613e36565b6125ba565b604051610927919061380e565b60405180910390f35b34801561093c57600080fd5b506109576004803603810190610952919061467a565b6126a2565b005b34801561096557600080fd5b5061096e61284c565b60405161097b91906136ed565b60405180910390f35b34801561099057600080fd5b506109ab60048036038101906109a69190613748565b612852565b6040516109c0999897969594939291906147af565b60405180910390f35b3480156109d557600080fd5b506109f060048036038101906109eb91906139b1565b612ac0565b005b3480156109fe57600080fd5b50610a196004803603810190610a149190613748565b612b0b565b604051610a26919061380e565b60405180910390f35b348015610a3b57600080fd5b50610a566004803603810190610a519190613748565b612bab565b604051610a63919061380e565b60405180910390f35b348015610a7857600080fd5b50610a81612c4b565b604051610a8e91906136ed565b60405180910390f35b348015610aa357600080fd5b50610abe6004803603810190610ab99190613748565b612c51565b604051610ad399989796959493929190614858565b60405180910390f35b348015610ae857600080fd5b50610b036004803603810190610afe9190613eae565b6130df565b005b348015610b1157600080fd5b50610b2c6004803603810190610b279190613748565b61310b565b604051610b3a92919061491d565b60405180910390f35b348015610b4f57600080fd5b50610b6a6004803603810190610b659190613748565b61323f565b604051610b7b959493929190614954565b60405180910390f35b348015610b9057600080fd5b50610bab6004803603810190610ba691906149b5565b613385565b604051610bb8919061380e565b60405180910390f35b348015610bcd57600080fd5b50610be86004803603810190610be39190613748565b613430565b604051610bf5919061380e565b60405180910390f35b60075481565b606060005b600654811015610c6b578260136000838152602001908152602001600020600201541415610c5857610c5060136000838152602001908152602001600020600101546134d0565b915050610ca5565b8080610c6390614a2d565b915050610c09565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b919050565b60045481565b6016602052806000526040600020600091509050806000015490806001015490806002015490806003018054610ce590614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610d1190614aa5565b8015610d5e5780601f10610d3357610100808354040283529160200191610d5e565b820191906000526020600020905b815481529060010190602001808311610d4157829003601f168201915b5050505050905084565b60405180608001604052806009548152602001828152602001848152602001838152506016600060095481526020019081526020016000206000820151816000015560208201518160010155604082015181600201556060820151816003019080519060200190610dda929190613631565b5090505060096000815480929190610df190614a2d565b9190505550505050565b606060006060806060806000600a6000898152602001908152602001600020600501600a60008a815260200190815260200160002060060154600a60008b8152602001908152602001600020600101600a60008c8152602001908152602001600020600201600a60008d8152602001908152602001600020600401600a60008e8152602001908152602001600020600701600a60008f815260200190815260200160002060080154868054610eaf90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610edb90614aa5565b8015610f285780601f10610efd57610100808354040283529160200191610f28565b820191906000526020600020905b815481529060010190602001808311610f0b57829003601f168201915b50505050509650848054610f3b90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610f6790614aa5565b8015610fb45780601f10610f8957610100808354040283529160200191610fb4565b820191906000526020600020905b815481529060010190602001808311610f9757829003601f168201915b50505050509450838054610fc790614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054610ff390614aa5565b80156110405780601f1061101557610100808354040283529160200191611040565b820191906000526020600020905b81548152906001019060200180831161102357829003601f168201915b5050505050935082805461105390614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461107f90614aa5565b80156110cc5780601f106110a1576101008083540402835291602001916110cc565b820191906000526020600020905b8154815290600101906020018083116110af57829003601f168201915b505050505092508180546110df90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461110b90614aa5565b80156111585780601f1061112d57610100808354040283529160200191611158565b820191906000526020600020905b81548152906001019060200180831161113b57829003601f168201915b505050505091509650965096509650965096509650919395979092949650565b60055481565b83600b600087815260200190815260200160002060020190805190602001906111a8929190613631565b5082600b600087815260200190815260200160002060030190805190602001906111d3929190613631565b5081600b600087815260200190815260200160002060040190805190602001906111fe929190613631565b5080600b6000878152602001908152602001600020600801819055505050505050565b60405180610120016040528060045481526020018881526020018781526020018681526020018581526020018481526020018381526020018281526020016000815250600f6000600454815260200190815260200160002060008201518160000155602082015181600101556040820151816002015560608201518160030190805190602001906112b3929190613631565b5060808201518160040190805190602001906112d0929190613631565b5060a08201518160050190805190602001906112ed929190613631565b5060c082015181600601908051906020019061130a929190613631565b5060e0820151816007015561010082015181600801559050506004600081548092919061133690614a2d565b919050555050505050505050565b606060005b6009548110156113b65783601660008381526020019081526020016000206002015414801561138d5750826016600083815260200190815260200160002060010154145b156113a35761139b816134d0565b9150506113f0565b80806113ae90614a2d565b915050611349565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b92915050565b82600b60008681526020019081526020016000206009019080519060200190611420929190613631565b5081600b6000868152602001908152602001600020600a018190555080600b6000868152602001908152602001600020600b018190555050505050565b60606000805b6008548110156114ad57836015600083815260200190815260200160002060020154141561149a57818061149690614a2d565b9250505b80806114a590614a2d565b915050611463565b5060008167ffffffffffffffff8111156114ca576114c9613886565b5b6040519080825280602002602001820160405280156114f85781602001602082028036833780820191505090505b5090506000805b600854811015611569578560156000838152602001908152602001600020600201541415611556578083838151811061153b5761153a614ad7565b5b602002602001018181525050818061155290614a2d565b9250505b808061156190614a2d565b9150506114ff565b50819350505050919050565b60095481565b60405180604001604052808381526020018281525060106000600554815260200190815260200160002060008201518160000190805190602001906115c1929190613631565b5060208201518160010190805190602001906115de929190613631565b50905050600560008154809291906115f590614a2d565b91905055505050565b83600f60008781526020019081526020016000206003019080519060200190611628929190613631565b5082600f60008781526020019081526020016000206004019080519060200190611653929190613631565b5081600f6000878152602001908152602001600020600601908051906020019061167e929190613631565b5080600f6000878152602001908152602001600020600701819055505050505050565b60035481565b806011600084815260200190815260200160002090805190602001906116ce929190613631565b505050565b6040518060e00160405280600754815260200187815260200186815260200185815260200184815260200183815260200182815250601460006007548152602001908152602001600020600082015181600001556020820151816001015560408201518160020155606082015181600301556080820151816004019080519060200190611761929190613631565b5060a082015181600501908051906020019061177e929190613631565b5060c082015181600601908051906020019061179b929190613631565b50905050600760008154809291906117b290614a2d565b9190505550505050505050565b600d60205280600052604060002060009150905080546117de90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461180a90614aa5565b80156118575780601f1061182c57610100808354040283529160200191611857565b820191906000526020600020905b81548152906001019060200180831161183a57829003601f168201915b505050505081565b60015481565b6040518060a001604052806008548152602001828152602001848152602001858152602001838152506015600060085481526020019081526020016000206000820151816000015560208201518160010155604082015181600201556060820151816003015560808201518160040190805190602001906118e7929190613631565b509050506001600f600086815260200190815260200160002060080160008282546119129190614b06565b9250508190555081600f60008681526020019081526020016000206005019080519060200190611943929190613631565b506008600081548092919061195790614a2d565b919050555050505050565b60606000805b6004548110156119b25783600f600083815260200190815260200160002060010154141561199f57818061199b90614a2d565b9250505b80806119aa90614a2d565b915050611968565b5060008167ffffffffffffffff8111156119cf576119ce613886565b5b6040519080825280602002602001820160405280156119fd5781602001602082028036833780820191505090505b5090506000805b600454811015611a6e5785600f6000838152602001908152602001600020600101541415611a5b5780838381518110611a4057611a3f614ad7565b5b6020026020010181815250508180611a5790614a2d565b9250505b8080611a6690614a2d565b915050611a04565b50819350505050919050565b80600a60008481526020019081526020016000206007019080519060200190611aa4929190613631565b505050565b6015602052806000526040600020600091509050806000015490806001015490806002015490806003015490806004018054611ae490614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054611b1090614aa5565b8015611b5d5780601f10611b3257610100808354040283529160200191611b5d565b820191906000526020600020905b815481529060010190602001808311611b4057829003601f168201915b5050505050905085565b6040518060a001604052806006548152602001858152602001848152602001838152602001828152506013600060065481526020019081526020016000206000820151816000015560208201518160010155604082015181600201556060820151816003019080519060200190611bdf929190613631565b506080820151816004019080519060200190611bfc929190613631565b509050506001600b60008681526020019081526020016000206006016000828254611c279190614b06565b9250508190555060066000815480929190611c4190614a2d565b919050555050505050565b60405180610180016040528060025481526020018981526020018881526020018781526020018681526020018581526020018481526020018381526020018281526020016040518060400160405280600481526020017f484241520000000000000000000000000000000000000000000000000000000081525081526020016000815260200182815250600b6000600254815260200190815260200160002060008201518160000155602082015181600101556040820151816002019080519060200190611d1b929190613631565b506060820151816003019080519060200190611d38929190613631565b506080820151816004019080519060200190611d55929190613631565b5060a0820151816005019080519060200190611d72929190613631565b5060c0820151816006015560e082015181600701556101008201518160080155610120820151816009019080519060200190611daf929190613631565b5061014082015181600a015561016082015181600b015590505060026000815480929190611ddc90614a2d565b91905055505050505050505050565b80600e60008481526020019081526020016000209080519060200190611e12929190613631565b505050565b89601260008c81526020019081526020016000206000018190555087601260008c81526020019081526020016000206001019080519060200190611e5c929190613631565b5086601260008c81526020019081526020016000206002019080519060200190611e87929190613631565b5085601260008c81526020019081526020016000206003019080519060200190611eb2929190613631565b5084601260008c81526020019081526020016000206004019080519060200190611edd929190613631565b5083601260008c81526020019081526020016000206005019080519060200190611f08929190613631565b5082601260008c81526020019081526020016000206006019080519060200190611f33929190613631565b5081601260008c81526020019081526020016000206007019080519060200190611f5e929190613631565b5080601260008c81526020019081526020016000206008019080519060200190611f89929190613631565b5088600a60008c81526020019081526020016000206004019080519060200190611fb4929190613631565b5050505050505050505050565b600b602052806000526040600020600091509050806000015490806001015490806002018054611ff090614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461201c90614aa5565b80156120695780601f1061203e57610100808354040283529160200191612069565b820191906000526020600020905b81548152906001019060200180831161204c57829003601f168201915b50505050509080600301805461207e90614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546120aa90614aa5565b80156120f75780601f106120cc576101008083540402835291602001916120f7565b820191906000526020600020905b8154815290600101906020018083116120da57829003601f168201915b50505050509080600401805461210c90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461213890614aa5565b80156121855780601f1061215a57610100808354040283529160200191612185565b820191906000526020600020905b81548152906001019060200180831161216857829003601f168201915b50505050509080600501805461219a90614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546121c690614aa5565b80156122135780601f106121e857610100808354040283529160200191612213565b820191906000526020600020905b8154815290600101906020018083116121f657829003601f168201915b50505050509080600601549080600701549080600801549080600901805461223a90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461226690614aa5565b80156122b35780601f10612288576101008083540402835291602001916122b3565b820191906000526020600020905b81548152906001019060200180831161229657829003601f168201915b50505050509080600a01549080600b015490508c565b80600c600084815260200190815260200160002090805190602001906122f0929190613631565b505050565b60008173ffffffffffffffffffffffffffffffffffffffff168360405161231b90614b8d565b60006040518083038185875af1925050503d8060008114612358576040519150601f19603f3d011682016040523d82523d6000602084013e61235d565b606091505b50509050806123a1576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161239890614bee565b60405180910390fd5b82600a600086815260200190815260200160002060060160008282546123c79190614c0e565b9250508190555050505050565b60085481565b601460205280600052604060002060009150905080600001549080600101549080600201549080600301549080600401805461241590614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461244190614aa5565b801561248e5780601f106124635761010080835404028352916020019161248e565b820191906000526020600020905b81548152906001019060200180831161247157829003601f168201915b5050505050908060050180546124a390614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546124cf90614aa5565b801561251c5780601f106124f15761010080835404028352916020019161251c565b820191906000526020600020905b8154815290600101906020018083116124ff57829003601f168201915b50505050509080600601805461253190614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461255d90614aa5565b80156125aa5780601f1061257f576101008083540402835291602001916125aa565b820191906000526020600020905b81548152906001019060200180831161258d57829003601f168201915b5050505050905087565b60025481565b606060005b600054811015612662578380519060200120600a60008381526020019081526020016000206002016040516125f49190614cd6565b604051809103902014801561263957508280519060200120600a600083815260200190815260200160002060030160405161262f9190614cd6565b6040518091039020145b1561264f57612647816134d0565b91505061269c565b808061265a90614a2d565b9150506125bf565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b92915050565b6040518061012001604052806000548152602001878152602001868152602001858152602001838152602001604051806060016040528060288152602001614d7f60289139815260200160008152602001848152602001600054815250600a600080548152602001908152602001600020600082015181600001556020820151816001019080519060200190612739929190613631565b506040820151816002019080519060200190612756929190613631565b506060820151816003019080519060200190612773929190613631565b506080820151816004019080519060200190612790929190613631565b5060a08201518160050190805190602001906127ad929190613631565b5060c0820151816006015560e08201518160070190805190602001906127d4929190613631565b506101008201518160080155905050806012600080548152602001908152602001600020600601908051906020019061280e929190613631565b5060005460126000805481526020019081526020016000206000018190555060008081548092919061283f90614a2d565b9190505550505050505050565b60005481565b600f60205280600052604060002060009150905080600001549080600101549080600201549080600301805461288790614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546128b390614aa5565b80156129005780601f106128d557610100808354040283529160200191612900565b820191906000526020600020905b8154815290600101906020018083116128e357829003601f168201915b50505050509080600401805461291590614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461294190614aa5565b801561298e5780601f106129635761010080835404028352916020019161298e565b820191906000526020600020905b81548152906001019060200180831161297157829003601f168201915b5050505050908060050180546129a390614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546129cf90614aa5565b8015612a1c5780601f106129f157610100808354040283529160200191612a1c565b820191906000526020600020905b8154815290600101906020018083116129ff57829003601f168201915b505050505090806006018054612a3190614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612a5d90614aa5565b8015612aaa5780601f10612a7f57610100808354040283529160200191612aaa565b820191906000526020600020905b815481529060010190602001808311612a8d57829003601f168201915b5050505050908060070154908060080154905089565b81600a60008581526020019081526020016000206005019080519060200190612aea929190613631565b5080600a600085815260200190815260200160002060060181905550505050565b600c6020528060005260406000206000915090508054612b2a90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612b5690614aa5565b8015612ba35780601f10612b7857610100808354040283529160200191612ba3565b820191906000526020600020905b815481529060010190602001808311612b8657829003601f168201915b505050505081565b60116020528060005260406000206000915090508054612bca90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612bf690614aa5565b8015612c435780601f10612c1857610100808354040283529160200191612c43565b820191906000526020600020905b815481529060010190602001808311612c2657829003601f168201915b505050505081565b60065481565b6012602052806000526040600020600091509050806000015490806001018054612c7a90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612ca690614aa5565b8015612cf35780601f10612cc857610100808354040283529160200191612cf3565b820191906000526020600020905b815481529060010190602001808311612cd657829003601f168201915b505050505090806002018054612d0890614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612d3490614aa5565b8015612d815780601f10612d5657610100808354040283529160200191612d81565b820191906000526020600020905b815481529060010190602001808311612d6457829003601f168201915b505050505090806003018054612d9690614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612dc290614aa5565b8015612e0f5780601f10612de457610100808354040283529160200191612e0f565b820191906000526020600020905b815481529060010190602001808311612df257829003601f168201915b505050505090806004018054612e2490614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612e5090614aa5565b8015612e9d5780601f10612e7257610100808354040283529160200191612e9d565b820191906000526020600020905b815481529060010190602001808311612e8057829003601f168201915b505050505090806005018054612eb290614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612ede90614aa5565b8015612f2b5780601f10612f0057610100808354040283529160200191612f2b565b820191906000526020600020905b815481529060010190602001808311612f0e57829003601f168201915b505050505090806006018054612f4090614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612f6c90614aa5565b8015612fb95780601f10612f8e57610100808354040283529160200191612fb9565b820191906000526020600020905b815481529060010190602001808311612f9c57829003601f168201915b505050505090806007018054612fce90614aa5565b80601f0160208091040260200160405190810160405280929190818152602001828054612ffa90614aa5565b80156130475780601f1061301c57610100808354040283529160200191613047565b820191906000526020600020905b81548152906001019060200180831161302a57829003601f168201915b50505050509080600801805461305c90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461308890614aa5565b80156130d55780601f106130aa576101008083540402835291602001916130d5565b820191906000526020600020905b8154815290600101906020018083116130b857829003601f168201915b5050505050905089565b80600d60008481526020019081526020016000209080519060200190613106929190613631565b505050565b601060205280600052604060002060009150905080600001805461312e90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461315a90614aa5565b80156131a75780601f1061317c576101008083540402835291602001916131a7565b820191906000526020600020905b81548152906001019060200180831161318a57829003601f168201915b5050505050908060010180546131bc90614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546131e890614aa5565b80156132355780601f1061320a57610100808354040283529160200191613235565b820191906000526020600020905b81548152906001019060200180831161321857829003601f168201915b5050505050905082565b601360205280600052604060002060009150905080600001549080600101549080600201549080600301805461327490614aa5565b80601f01602080910402602001604051908101604052809291908181526020018280546132a090614aa5565b80156132ed5780601f106132c2576101008083540402835291602001916132ed565b820191906000526020600020905b8154815290600101906020018083116132d057829003601f168201915b50505050509080600401805461330290614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461332e90614aa5565b801561337b5780601f106133505761010080835404028352916020019161337b565b820191906000526020600020905b81548152906001019060200180831161335e57829003601f168201915b5050505050905085565b606060005b6000548110156133f1578280519060200120600a60008381526020019081526020016000206002016040516133bf9190614cd6565b604051809103902014156133de576133d6816134d0565b91505061342b565b80806133e990614a2d565b91505061338a565b506040518060400160405280600581526020017f46616c736500000000000000000000000000000000000000000000000000000081525090505b919050565b600e602052806000526040600020600091509050805461344f90614aa5565b80601f016020809104026020016040519081016040528092919081815260200182805461347b90614aa5565b80156134c85780601f1061349d576101008083540402835291602001916134c8565b820191906000526020600020905b8154815290600101906020018083116134ab57829003601f168201915b505050505081565b60606000821415613518576040518060400160405280600181526020017f3000000000000000000000000000000000000000000000000000000000000000815250905061362c565b600082905060005b6000821461354a57808061353390614a2d565b915050600a826135439190614d1c565b9150613520565b60008167ffffffffffffffff81111561356657613565613886565b5b6040519080825280601f01601f1916602001820160405280156135985781602001600182028036833780820191505090505b5090505b60008514613625576001826135b19190614c0e565b9150600a856135c09190614d4d565b60306135cc9190614b06565b60f81b8183815181106135e2576135e1614ad7565b5b60200101907effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916908160001a905350600a8561361e9190614d1c565b945061359c565b8093505050505b919050565b82805461363d90614aa5565b90600052602060002090601f01602090048101928261365f57600085556136a6565b82601f1061367857805160ff19168380011785556136a6565b828001600101855582156136a6579182015b828111156136a557825182559160200191906001019061368a565b5b5090506136b391906136b7565b5090565b5b808211156136d05760008160009055506001016136b8565b5090565b6000819050919050565b6136e7816136d4565b82525050565b600060208201905061370260008301846136de565b92915050565b6000604051905090565b600080fd5b600080fd5b613725816136d4565b811461373057600080fd5b50565b6000813590506137428161371c565b92915050565b60006020828403121561375e5761375d613712565b5b600061376c84828501613733565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b838110156137af578082015181840152602081019050613794565b838111156137be576000848401525b50505050565b6000601f19601f8301169050919050565b60006137e082613775565b6137ea8185613780565b93506137fa818560208601613791565b613803816137c4565b840191505092915050565b6000602082019050818103600083015261382881846137d5565b905092915050565b600060808201905061384560008301876136de565b61385260208301866136de565b61385f60408301856136de565b818103606083015261387181846137d5565b905095945050505050565b600080fd5b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b6138be826137c4565b810181811067ffffffffffffffff821117156138dd576138dc613886565b5b80604052505050565b60006138f0613708565b90506138fc82826138b5565b919050565b600067ffffffffffffffff82111561391c5761391b613886565b5b613925826137c4565b9050602081019050919050565b82818337600083830152505050565b600061395461394f84613901565b6138e6565b9050828152602081018484840111156139705761396f613881565b5b61397b848285613932565b509392505050565b600082601f8301126139985761399761387c565b5b81356139a8848260208601613941565b91505092915050565b6000806000606084860312156139ca576139c9613712565b5b60006139d886828701613733565b935050602084013567ffffffffffffffff8111156139f9576139f8613717565b5b613a0586828701613983565b9250506040613a1686828701613733565b9150509250925092565b600060e0820190508181036000830152613a3a818a6137d5565b9050613a4960208301896136de565b8181036040830152613a5b81886137d5565b90508181036060830152613a6f81876137d5565b90508181036080830152613a8381866137d5565b905081810360a0830152613a9781856137d5565b9050613aa660c08301846136de565b98975050505050505050565b600080600080600060a08688031215613ace57613acd613712565b5b6000613adc88828901613733565b955050602086013567ffffffffffffffff811115613afd57613afc613717565b5b613b0988828901613983565b945050604086013567ffffffffffffffff811115613b2a57613b29613717565b5b613b3688828901613983565b935050606086013567ffffffffffffffff811115613b5757613b56613717565b5b613b6388828901613983565b9250506080613b7488828901613733565b9150509295509295909350565b600080600080600080600060e0888a031215613ba057613b9f613712565b5b6000613bae8a828b01613733565b9750506020613bbf8a828b01613733565b965050604088013567ffffffffffffffff811115613be057613bdf613717565b5b613bec8a828b01613983565b955050606088013567ffffffffffffffff811115613c0d57613c0c613717565b5b613c198a828b01613983565b945050608088013567ffffffffffffffff811115613c3a57613c39613717565b5b613c468a828b01613983565b93505060a088013567ffffffffffffffff811115613c6757613c66613717565b5b613c738a828b01613983565b92505060c0613c848a828b01613733565b91505092959891949750929550565b60008060408385031215613caa57613ca9613712565b5b6000613cb885828601613733565b9250506020613cc985828601613733565b9150509250929050565b60008060008060808587031215613ced57613cec613712565b5b6000613cfb87828801613733565b945050602085013567ffffffffffffffff811115613d1c57613d1b613717565b5b613d2887828801613983565b9350506040613d3987828801613733565b9250506060613d4a87828801613733565b91505092959194509250565b600081519050919050565b600082825260208201905092915050565b6000819050602082019050919050565b613d8b816136d4565b82525050565b6000613d9d8383613d82565b60208301905092915050565b6000602082019050919050565b6000613dc182613d56565b613dcb8185613d61565b9350613dd683613d72565b8060005b83811015613e07578151613dee8882613d91565b9750613df983613da9565b925050600181019050613dda565b5085935050505092915050565b60006020820190508181036000830152613e2e8184613db6565b905092915050565b60008060408385031215613e4d57613e4c613712565b5b600083013567ffffffffffffffff811115613e6b57613e6a613717565b5b613e7785828601613983565b925050602083013567ffffffffffffffff811115613e9857613e97613717565b5b613ea485828601613983565b9150509250929050565b60008060408385031215613ec557613ec4613712565b5b6000613ed385828601613733565b925050602083013567ffffffffffffffff811115613ef457613ef3613717565b5b613f0085828601613983565b9150509250929050565b60008060008060008060c08789031215613f2757613f26613712565b5b6000613f3589828a01613733565b9650506020613f4689828a01613733565b9550506040613f5789828a01613733565b945050606087013567ffffffffffffffff811115613f7857613f77613717565b5b613f8489828a01613983565b935050608087013567ffffffffffffffff811115613fa557613fa4613717565b5b613fb189828a01613983565b92505060a087013567ffffffffffffffff811115613fd257613fd1613717565b5b613fde89828a01613983565b9150509295509295509295565b6000806000806080858703121561400557614004613712565b5b600061401387828801613733565b945050602061402487828801613733565b935050604085013567ffffffffffffffff81111561404557614044613717565b5b61405187828801613983565b925050606061406287828801613733565b91505092959194509250565b600060a08201905061408360008301886136de565b61409060208301876136de565b61409d60408301866136de565b6140aa60608301856136de565b81810360808301526140bc81846137d5565b90509695505050505050565b600080600080608085870312156140e2576140e1613712565b5b60006140f087828801613733565b945050602061410187828801613733565b935050604085013567ffffffffffffffff81111561412257614121613717565b5b61412e87828801613983565b925050606085013567ffffffffffffffff81111561414f5761414e613717565b5b61415b87828801613983565b91505092959194509250565b600080600080600080600080610100898b03121561418857614187613712565b5b60006141968b828c01613733565b985050602089013567ffffffffffffffff8111156141b7576141b6613717565b5b6141c38b828c01613983565b975050604089013567ffffffffffffffff8111156141e4576141e3613717565b5b6141f08b828c01613983565b965050606089013567ffffffffffffffff81111561421157614210613717565b5b61421d8b828c01613983565b955050608089013567ffffffffffffffff81111561423e5761423d613717565b5b61424a8b828c01613983565b94505060a061425b8b828c01613733565b93505060c061426c8b828c01613733565b92505060e061427d8b828c01613733565b9150509295985092959890939650565b6000806000806000806000806000806101408b8d0312156142b1576142b0613712565b5b60006142bf8d828e01613733565b9a505060208b013567ffffffffffffffff8111156142e0576142df613717565b5b6142ec8d828e01613983565b99505060408b013567ffffffffffffffff81111561430d5761430c613717565b5b6143198d828e01613983565b98505060608b013567ffffffffffffffff81111561433a57614339613717565b5b6143468d828e01613983565b97505060808b013567ffffffffffffffff81111561436757614366613717565b5b6143738d828e01613983565b96505060a08b013567ffffffffffffffff81111561439457614393613717565b5b6143a08d828e01613983565b95505060c08b013567ffffffffffffffff8111156143c1576143c0613717565b5b6143cd8d828e01613983565b94505060e08b013567ffffffffffffffff8111156143ee576143ed613717565b5b6143fa8d828e01613983565b9350506101008b013567ffffffffffffffff81111561441c5761441b613717565b5b6144288d828e01613983565b9250506101208b013567ffffffffffffffff81111561444a57614449613717565b5b6144568d828e01613983565b9150509295989b9194979a5092959850565b60006101808201905061447e600083018f6136de565b61448b602083018e6136de565b818103604083015261449d818d6137d5565b905081810360608301526144b1818c6137d5565b905081810360808301526144c5818b6137d5565b905081810360a08301526144d9818a6137d5565b90506144e860c08301896136de565b6144f560e08301886136de565b6145036101008301876136de565b81810361012083015261451681866137d5565b90506145266101408301856136de565b6145346101608301846136de565b9d9c50505050505050505050505050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061457082614545565b9050919050565b61458081614565565b811461458b57600080fd5b50565b60008135905061459d81614577565b92915050565b6000806000606084860312156145bc576145bb613712565b5b60006145ca86828701613733565b93505060206145db86828701613733565b92505060406145ec8682870161458e565b9150509250925092565b600060e08201905061460b600083018a6136de565b61461860208301896136de565b61462560408301886136de565b61463260608301876136de565b818103608083015261464481866137d5565b905081810360a083015261465881856137d5565b905081810360c083015261466c81846137d5565b905098975050505050505050565b60008060008060008060c0878903121561469757614696613712565b5b600087013567ffffffffffffffff8111156146b5576146b4613717565b5b6146c189828a01613983565b965050602087013567ffffffffffffffff8111156146e2576146e1613717565b5b6146ee89828a01613983565b955050604087013567ffffffffffffffff81111561470f5761470e613717565b5b61471b89828a01613983565b945050606087013567ffffffffffffffff81111561473c5761473b613717565b5b61474889828a01613983565b935050608087013567ffffffffffffffff81111561476957614768613717565b5b61477589828a01613983565b92505060a087013567ffffffffffffffff81111561479657614795613717565b5b6147a289828a01613983565b9150509295509295509295565b6000610120820190506147c5600083018c6136de565b6147d2602083018b6136de565b6147df604083018a6136de565b81810360608301526147f181896137d5565b9050818103608083015261480581886137d5565b905081810360a083015261481981876137d5565b905081810360c083015261482d81866137d5565b905061483c60e08301856136de565b61484a6101008301846136de565b9a9950505050505050505050565b60006101208201905061486e600083018c6136de565b8181036020830152614880818b6137d5565b90508181036040830152614894818a6137d5565b905081810360608301526148a881896137d5565b905081810360808301526148bc81886137d5565b905081810360a08301526148d081876137d5565b905081810360c08301526148e481866137d5565b905081810360e08301526148f881856137d5565b905081810361010083015261490d81846137d5565b90509a9950505050505050505050565b6000604082019050818103600083015261493781856137d5565b9050818103602083015261494b81846137d5565b90509392505050565b600060a08201905061496960008301886136de565b61497660208301876136de565b61498360408301866136de565b818103606083015261499581856137d5565b905081810360808301526149a981846137d5565b90509695505050505050565b6000602082840312156149cb576149ca613712565b5b600082013567ffffffffffffffff8111156149e9576149e8613717565b5b6149f584828501613983565b91505092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000614a38826136d4565b91507fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff821415614a6b57614a6a6149fe565b5b600182019050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b60006002820490506001821680614abd57607f821691505b60208210811415614ad157614ad0614a76565b5b50919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b6000614b11826136d4565b9150614b1c836136d4565b9250827fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff03821115614b5157614b506149fe565b5b828201905092915050565b600081905092915050565b50565b6000614b77600083614b5c565b9150614b8282614b67565b600082019050919050565b6000614b9882614b6a565b9150819050919050565b7f53656e64206661696c6564000000000000000000000000000000000000000000600082015250565b6000614bd8600b83613780565b9150614be382614ba2565b602082019050919050565b60006020820190508181036000830152614c0781614bcb565b9050919050565b6000614c19826136d4565b9150614c24836136d4565b925082821015614c3757614c366149fe565b5b828203905092915050565b60008190508160005260206000209050919050565b60008154614c6481614aa5565b614c6e8186614b5c565b94506001821660008114614c895760018114614c9a57614ccd565b60ff19831686528186019350614ccd565b614ca385614c42565b60005b83811015614cc557815481890152600182019150602081019050614ca6565b838801955050505b50505092915050565b6000614ce28284614c57565b915081905092915050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b6000614d27826136d4565b9150614d32836136d4565b925082614d4257614d41614ced565b5b828204905092915050565b6000614d58826136d4565b9150614d63836136d4565b925082614d7357614d72614ced565b5b82820690509291505056fe68747470733a2f2f692e706f7374696d672e63632f537378477735635a2f706572736f6e2e6a7067a26469706673582212205e28bd4ff711ea652e284c72485eb3464cbafc672dff4b2c9663997747597dd564736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "_categoryMap(uint256)": {
+        "notice": "The map of all the Survey Category ."
+      },
+      "_completedinformedMap(uint256)": {
+        "notice": "The map of all the Completed Informed Consent."
+      },
+      "_completedsurveyMap(uint256)": {
+        "notice": "The map of all the Completed Surveys."
+      },
+      "_fhirMap(uint256)": {
+        "notice": "The map of all the FHIR information."
+      },
+      "_ongoingMap(uint256)": {
+        "notice": "The map of all the OnGoing Studies."
+      },
+      "_questionanswerdMap(uint256)": {
+        "notice": "The map of all the Question Answerd in a Survey."
+      },
+      "_sectionsMap(uint256)": {
+        "notice": "The map of all the Survey Sections  ."
+      },
+      "_studyAudienceMap(uint256)": {
+        "notice": "The map of all the Rewards information."
+      },
+      "_studyMap(uint256)": {
+        "notice": "The map of all the Studies information."
+      },
+      "_surveyMap(uint256)": {
+        "notice": "The map of all the Surveys information."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 178,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_UserIds",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 180,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_FhirIds",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 182,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_StudyIds",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 184,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_SubjectIds",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 186,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_SurveyIds",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 188,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_SurveyCategoryIds",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 190,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_OngoingIds",
+        "offset": 0,
+        "slot": "6",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 192,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_AnsweredIds",
+        "offset": 0,
+        "slot": "7",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 194,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_CompletedSurveyIds",
+        "offset": 0,
+        "slot": "8",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 196,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_CompletedInformedConsentIds",
+        "offset": 0,
+        "slot": "9",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 202,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_userMap",
+        "offset": 0,
+        "slot": "10",
+        "type": "t_mapping(t_uint256,t_struct(user_struct)30_storage)"
+      },
+      {
+        "astId": 208,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_studyMap",
+        "offset": 0,
+        "slot": "11",
+        "type": "t_mapping(t_uint256,t_struct(study_struct)74_storage)"
+      },
+      {
+        "astId": 212,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_studyAges",
+        "offset": 0,
+        "slot": "12",
+        "type": "t_mapping(t_uint256,t_string_storage)"
+      },
+      {
+        "astId": 216,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_studyTitles",
+        "offset": 0,
+        "slot": "13",
+        "type": "t_mapping(t_uint256,t_string_storage)"
+      },
+      {
+        "astId": 221,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_studyAudienceMap",
+        "offset": 0,
+        "slot": "14",
+        "type": "t_mapping(t_uint256,t_string_storage)"
+      },
+      {
+        "astId": 227,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_surveyMap",
+        "offset": 0,
+        "slot": "15",
+        "type": "t_mapping(t_uint256,t_struct(survey_struct)102_storage)"
+      },
+      {
+        "astId": 233,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_categoryMap",
+        "offset": 0,
+        "slot": "16",
+        "type": "t_mapping(t_uint256,t_struct(survey_category_struct)37_storage)"
+      },
+      {
+        "astId": 238,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_sectionsMap",
+        "offset": 0,
+        "slot": "17",
+        "type": "t_mapping(t_uint256,t_string_storage)"
+      },
+      {
+        "astId": 244,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_fhirMap",
+        "offset": 0,
+        "slot": "18",
+        "type": "t_mapping(t_uint256,t_struct(fhir_struct)130_storage)"
+      },
+      {
+        "astId": 250,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_ongoingMap",
+        "offset": 0,
+        "slot": "19",
+        "type": "t_mapping(t_uint256,t_struct(ongoing_struct)141_storage)"
+      },
+      {
+        "astId": 256,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_questionanswerdMap",
+        "offset": 0,
+        "slot": "20",
+        "type": "t_mapping(t_uint256,t_struct(survey_question_answer_struct)156_storage)"
+      },
+      {
+        "astId": 262,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_completedsurveyMap",
+        "offset": 0,
+        "slot": "21",
+        "type": "t_mapping(t_uint256,t_struct(completed_survey_struct)167_storage)"
+      },
+      {
+        "astId": 268,
+        "contract": "contracts/WavyStudy.sol:WavyStudy",
+        "label": "_completedinformedMap",
+        "offset": 0,
+        "slot": "22",
+        "type": "t_mapping(t_uint256,t_struct(completed_informed_consent_struct)176_storage)"
+      }
+    ],
+    "types": {
+      "t_mapping(t_uint256,t_string_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => string)",
+        "numberOfBytes": "32",
+        "value": "t_string_storage"
+      },
+      "t_mapping(t_uint256,t_struct(completed_informed_consent_struct)176_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.completed_informed_consent_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(completed_informed_consent_struct)176_storage"
+      },
+      "t_mapping(t_uint256,t_struct(completed_survey_struct)167_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.completed_survey_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(completed_survey_struct)167_storage"
+      },
+      "t_mapping(t_uint256,t_struct(fhir_struct)130_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.fhir_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(fhir_struct)130_storage"
+      },
+      "t_mapping(t_uint256,t_struct(ongoing_struct)141_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.ongoing_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(ongoing_struct)141_storage"
+      },
+      "t_mapping(t_uint256,t_struct(study_struct)74_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.study_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(study_struct)74_storage"
+      },
+      "t_mapping(t_uint256,t_struct(survey_category_struct)37_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.survey_category_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(survey_category_struct)37_storage"
+      },
+      "t_mapping(t_uint256,t_struct(survey_question_answer_struct)156_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.survey_question_answer_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(survey_question_answer_struct)156_storage"
+      },
+      "t_mapping(t_uint256,t_struct(survey_struct)102_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.survey_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(survey_struct)102_storage"
+      },
+      "t_mapping(t_uint256,t_struct(user_struct)30_storage)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => struct WavyStudy.user_struct)",
+        "numberOfBytes": "32",
+        "value": "t_struct(user_struct)30_storage"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_struct(completed_informed_consent_struct)176_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.completed_informed_consent_struct",
+        "members": [
+          {
+            "astId": 169,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "completed_informed_consent_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 171,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "study_id",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 173,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 175,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "date",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "128"
+      },
+      "t_struct(completed_survey_struct)167_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.completed_survey_struct",
+        "members": [
+          {
+            "astId": 158,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "completed_survey_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 160,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "study_id",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 162,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 164,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "survey_id",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 166,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "date",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "160"
+      },
+      "t_struct(fhir_struct)130_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.fhir_struct",
+        "members": [
+          {
+            "astId": 105,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 108,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "family_name",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 111,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "given_name",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 114,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "identifier",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 117,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "phone",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 120,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "gender",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 123,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "birth_date",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 126,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "about",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 129,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "patient_id",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "288"
+      },
+      "t_struct(ongoing_struct)141_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.ongoing_struct",
+        "members": [
+          {
+            "astId": 132,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "ongoing_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 134,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "study_id",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 136,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 138,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "date",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 140,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "given_permission",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "160"
+      },
+      "t_struct(study_struct)74_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.study_struct",
+        "members": [
+          {
+            "astId": 40,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "study_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 43,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 46,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "image",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 49,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "title",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 52,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "description",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 55,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "permission",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 58,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "contributors",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 61,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "audience",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 64,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "budget",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 67,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "reward_type",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 70,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "reward_price",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 73,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "total_spending_limit",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "384"
+      },
+      "t_struct(survey_category_struct)37_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.survey_category_struct",
+        "members": [
+          {
+            "astId": 33,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "name",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 36,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "image",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_struct(survey_question_answer_struct)156_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.survey_question_answer_struct",
+        "members": [
+          {
+            "astId": 143,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "answer_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 145,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "study_id",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 147,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 149,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "survey_id",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 151,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "section_id",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 153,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "question_id",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 155,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "answer",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_string_storage"
+          }
+        ],
+        "numberOfBytes": "224"
+      },
+      "t_struct(survey_struct)102_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.survey_struct",
+        "members": [
+          {
+            "astId": 77,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "survey_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 80,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "study_id",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 83,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 86,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "name",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 89,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "description",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 92,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "date",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 95,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "image",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 98,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "reward",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 101,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "submission",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "288"
+      },
+      "t_struct(user_struct)30_storage": {
+        "encoding": "inplace",
+        "label": "struct WavyStudy.user_struct",
+        "members": [
+          {
+            "astId": 5,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "user_id",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 8,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "name",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 11,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "email",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 14,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "password",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 17,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "walletaddress",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 20,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "image",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 23,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "credits",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 26,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "accesstoken",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_string_storage"
+          },
+          {
+            "astId": 29,
+            "contract": "contracts/WavyStudy.sol:WavyStudy",
+            "label": "fhirid",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "288"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

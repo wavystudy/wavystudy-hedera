@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button color overrides to match design: #36C499 with black text */
+.btn-custom,
+button,
+input[type="button"],
+input[type="submit"], button svg {
+	background-color: #36C499 !important;
+	color: white !important;
+}
+
+button:hover,
+.btn-custom:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover, button:hover svg, button:hover p {
+	background-color: #2FAE88 !important; /* slightly darker on hover */
+	color:white !important;
+}
