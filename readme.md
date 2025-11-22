@@ -61,3 +61,12 @@ Wavystudy Api is made using nextjs. We have depolyed it into vercel. Then we are
 https://wavystudy-hedera.vercel.app/
 ### App
 https://wavystudy-hedera-app.vercel.app/
+
+
+1. 
+vinayravi2022@gmail.com
+zakir%%$
+
+2.
+Caryn49@gmail.com
+zakir%%$
