@@ -63,10 +63,10 @@ https://wavystudy-hedera.vercel.app/
 https://wavystudy-hedera-app.vercel.app/
 
 
-1. 
+1. Website
 vinayravi2022@gmail.com
 zakir%%$
 
-2.
+2. App
 Caryn49@gmail.com
 zakir%%$
