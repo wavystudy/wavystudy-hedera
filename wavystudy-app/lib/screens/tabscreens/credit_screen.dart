@@ -322,158 +322,112 @@ class _CreditScreenState extends ConsumerState<CreditScreen> {
                               margin: EdgeInsets.only(top: 0),
                               child: Stack(
                                 children: [
-                                  SizedBox(
-                                    width: size.width,
-                                    child: Stack(
-                                      children: [
-                                        Positioned.fill(
-                                          child: SvgPicture.asset(
-                                            "assets/images/bg.svg",
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                        Container(
-                                          padding: EdgeInsets.only(
-                                              top: 64, left: 20, right: 20),
+                                  Positioned.fill(
+                                    child: SvgPicture.asset(
+                                      "assets/images/bg.svg",
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsets.only(
+                                        top: 64, left: 20, right: 20, bottom: 40),
+                                    child: MasonryGridView.count(
+                                      crossAxisCount: 2,
+                                      crossAxisSpacing: 30,
+                                      mainAxisSpacing: 12,
+                                      itemCount: dummyOffers.length,
+                                      itemBuilder: (context, index) {
+                                        return Container(
                                           decoration: BoxDecoration(
+                                            color: Colors.white,
                                             borderRadius:
-                                                BorderRadius.vertical(
-                                              top: Radius.elliptical(
-                                                size.width * 0.5,
-                                                25.0,
+                                                BorderRadius.circular(15),
+                                            boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.06),
+                                                blurRadius: 8,
+                                                offset: Offset(0, 2),
                                               ),
-                                            ),
+                                            ],
                                           ),
-                                          child: MasonryGridView.count(
-                                            crossAxisCount: 2,
-                                            crossAxisSpacing: 30,
-                                            mainAxisSpacing: 12,
-                                            itemCount: dummyOffers.length,
-                                            padding:
-                                                const EdgeInsets.only(bottom: 40),
-                                            itemBuilder: (context, index) {
-                                              return Container(
-                                                decoration: BoxDecoration(
-                                                  color: Colors.white,
-                                                  borderRadius:
-                                                      BorderRadius.circular(15),
-                                                  boxShadow: [
-                                                    BoxShadow(
-                                                      color: Colors.black
-                                                          .withOpacity(0.06),
-                                                      blurRadius: 8,
-                                                      offset: Offset(0, 2),
-                                                    ),
-                                                  ],
+                                          child: Column(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.center,
+                                                children: [
+                                                  Container(
+                                                    margin: const EdgeInsets
+                                                        .only(top: 24, bottom: 24),
+                                                    child: Image.asset(
+                                                        dummyOffers[index].image),
+                                                  ),
+                                                ],
+                                              ),
+                                              Container(
+                                                padding:
+                                                    EdgeInsets.only(left: 12),
+                                                margin:
+                                                    EdgeInsets.only(bottom: 12),
+                                                child: Text(
+                                                  dummyOffers[index].title,
+                                                  style: GoogleFonts.getFont(
+                                                    'Lexend Deca',
+                                                    fontSize: 14,
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
                                                 ),
-                                                child: Column(
+                                              ),
+                                              Container(
+                                                padding: const EdgeInsets.only(
+                                                    left: 12, right: 12, bottom: 16),
+                                                child: Row(
                                                   mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
+                                                      MainAxisAlignment.spaceBetween,
                                                   children: [
-                                                    Row(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
-                                                      children: [
-                                                        Container(
-                                                          margin:
-                                                              const EdgeInsets
-                                                                      .only(
-                                                                  top: 24,
-                                                                  bottom: 24),
-                                                          child: Image.asset(
-                                                              dummyOffers[
-                                                                      index]
-                                                                  .image),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    Container(
-                                                      padding:
-                                                          EdgeInsets.only(
-                                                              left: 12),
-                                                      margin: EdgeInsets.only(
-                                                          bottom: 12),
-                                                      child: Text(
-                                                        dummyOffers[index]
-                                                            .title,
-                                                        style: GoogleFonts
-                                                            .getFont(
-                                                          'Lexend Deca',
-                                                          fontSize: 14,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                        ),
+                                                    Text(
+                                                      dummyOffers[index].store,
+                                                      style: GoogleFonts.getFont(
+                                                        'Lexend Deca',
+                                                        color: Color(0xFF7CD1E3),
+                                                        fontSize: 14,
+                                                        fontWeight: FontWeight.bold,
                                                       ),
                                                     ),
-                                                    Container(
-                                                      padding:
-                                                          const EdgeInsets
-                                                              .only(
-                                                                  left: 12,
-                                                                  right: 12,
-                                                                  bottom: 16),
-                                                      child: Row(
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .spaceBetween,
-                                                        children: [
-                                                          Text(
-                                                            dummyOffers[index]
-                                                                .store,
-                                                            style: GoogleFonts
-                                                                .getFont(
-                                                              'Lexend Deca',
-                                                              color: Color(
-                                                                  0xFF7CD1E3),
-                                                              fontSize: 14,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                          ),
-                                                          Text(
-                                                            dummyOffers[index]
-                                                                .period,
-                                                            style: GoogleFonts
-                                                                .getFont(
-                                                              'Lexend Deca',
-                                                              color: Color(
-                                                                  0xFFA0A1A8),
-                                                              fontSize: 10,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .bold,
-                                                            ),
-                                                          ),
-                                                        ],
+                                                    Text(
+                                                      dummyOffers[index].period,
+                                                      style: GoogleFonts.getFont(
+                                                        'Lexend Deca',
+                                                        color: Color(0xFFA0A1A8),
+                                                        fontSize: 10,
+                                                        fontWeight: FontWeight.bold,
                                                       ),
-                                                    )
+                                                    ),
                                                   ],
                                                 ),
-                                              );
-                                            },
+                                              )
+                                            ],
                                           ),
-                                        ),
+                                        );
+                                      },
+                                    ),
                                   ),
                                   Positioned(
                                     top: 24,
-                                    child: SizedBox(
-                                      width: size.width,
-                                      child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        children: [
-                                          Text("Extra credits",
-                                              style: GoogleFonts.getFont(
-                                                  'Lexend Deca',
-                                                  color: Color(0xFF08323A),
-                                                  fontSize: 15,
-                                                  fontWeight: FontWeight.bold)),
-                                        ],
-                                      ),
+                                    left: 0,
+                                    right: 0,
+                                    child: Center(
+                                      child: Text("Extra credits",
+                                          style: GoogleFonts.getFont(
+                                              'Lexend Deca',
+                                              color: Color(0xFF08323A),
+                                              fontSize: 15,
+                                              fontWeight: FontWeight.bold)),
                                     ),
                                   ),
                                 ],
